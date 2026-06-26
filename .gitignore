@@ -1,0 +1,18 @@
+# Generated pipeline output
+output.json
+full_stdout.json
+*_out.json
+
+# Run/debug artifacts
+*_stderr.txt
+empty_test.txt
+
+# Redundant raw download (data lives in Linux.log)
+linux_logs.tar.gz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
