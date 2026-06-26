@@ -29,7 +29,7 @@ evaluation/          Approach-agnostic scoring harness + benchmark driver
   ├─ signatures.py     Per-dataset ground truth (level-based + keyword)
   ├─ EVALUATION.md     Rubric + expectations + results
   └─ README.md         Contract, scoring, and benchmark instructions
-HANDOFF.md           Original project handoff notes
+RUNNING.md           Reviewer runbook · OVERVIEW.md  Whole-repo explainer
 ```
 
 ## Prerequisites

@@ -16,7 +16,7 @@ webhook/DB. No frontend — pure code plumbing.
 pipeline.py            Reference approach: two-stage, format-adaptive, emits a JSON ARRAY of errors
 requirements.txt       (none — Python 3 stdlib only; needs a Gemma backend)
 README.md              Quickstart + how it works
-HANDOFF.md             Historical handoff (superseded — see note at its top)
+RUNNING.md             Reviewer runbook (run with cloud or local Gemma)
 data/
   loghub/              All 16 loghub 2k datasets (Android … Zookeeper)
   samples/             16 reproducible 300-line eval samples (from make_samples.py)
@@ -28,7 +28,6 @@ evaluation/            Approach-agnostic scoring harness
   make_samples.py        Seeded sampler
   EVALUATION.md          Rubric + expectations + results
 results/               Frozen pre-tuning baseline (gemma2:9b): outputs + scorecard
-log-org-with-dataset/  Collaborator's alternate approach (single most-severe anomaly, gemma2:2b)
 outputs/               Generated run outputs (gitignored)
 ```
 
@@ -94,14 +93,6 @@ recall (curated) · 10 benign leakage**. Most failures are weak-model artifacts 
 clear on the judging-grade `gemma-4-31b-it`. Spark (all-INFO) correctly returns `[]`. See
 [evaluation/EVALUATION.md](evaluation/EVALUATION.md) for the full reading.
 
-## Secondary approach (`log-org-with-dataset/`)
-
-A collaborator's alternate design: heuristic **prefilter → `gemma2:2b` (`format="json"`) →
-validate → retry**, emitting the **single most-severe anomaly** as one JSON object with 4
-fields (no `source_line`/`occurrence_count`). Same generalize-across-formats goal, different
-shape from the array-producing reference pipeline. See its own
-[README](log-org-with-dataset/README.md).
-
 ## How to run
 
 ```bash
@@ -117,13 +108,8 @@ python evaluation/eval.py data/HDFS_2k.log out.json hdfs
 python evaluation/run_all.py --model gemma2:9b
 ```
 
-## Suggested cleanups (not yet applied — proposals only)
+## Suggested cleanups (optional)
 
-- **`HANDOFF.md` is historical** — it describes the original `requests`-based, 100-line-chunk
-  script that the current `pipeline.py` (stdlib `urllib`, dedup, two-stage, argparse) has
-  superseded. A "superseded" note is now at its top; could also move under `docs/history/`.
 - **Root scratch artifacts** (`*.stderr`, `run_all_*.log`, `*_out.json`, etc.) clutter the
-  local working tree but are **gitignored** (not in the cloned repo). Optional: a `scratch/` dir.
-- **`log-org-with-dataset/`** has `triage.py`, `triage-cr.py`, and `test.py` (which *differ*) —
-  worth a one-line note in its README on which is canonical.
+  local working tree but are **gitignored** (not in the cloned repo).
 - Merged remote branches (`additional-data`, `alaska-log-org`) could be pruned.
