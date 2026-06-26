@@ -67,9 +67,12 @@ scores it, and prints an aggregate scorecard.
 ### Prerequisites
 
 ```bash
-# Ollama running, plus whichever model(s) you'll benchmark:
+# Local: Ollama running, plus whichever model(s) you'll benchmark:
 ollama pull gemma4:12b      # full-quality
 ollama pull gemma2:9b       # faster
+
+# OR no local setup at all — free cloud Gemma:
+export GEMINI_API_KEY=...   # free key (no card): https://aistudio.google.com/apikey
 ```
 
 ### Run
@@ -80,23 +83,26 @@ python evaluation/run_all.py --model gemma4:12b      # one full pass, all 16 dat
 python evaluation/run_all.py --model gemma2:9b       # faster pass
 python evaluation/run_all.py --only hdfs,linux,bgl   # a subset
 
-# free cloud Gemma (Google AI Studio) — no local model needed:
+# free cloud Gemma (Google AI Studio) — no local model needed, fast + judging-grade:
 export GEMINI_API_KEY=...        # free key: https://aistudio.google.com/apikey
-python evaluation/run_all.py --provider google                      # gemma-3-27b-it
-python evaluation/run_all.py --provider google --model gemma-4-31b-it
+python evaluation/run_all.py --provider google     # gemma-4-31b-it (default)
 ```
+
+Note: `gemma-3-27b-it` is not served on the current API (404); use `gemma-4-31b-it`.
+The pipeline strips Gemma-4's `<thought>` reasoning traces before parsing JSON.
 
 Per-dataset JSON is written to `outputs/<dataset>.json` (gitignored). The scorecard
 columns: `entries`, `hard` (A–G pass/fail), `recall`, `leak` (benign leakage), `cur`
 (curated signatures vs generic). The footer gives hard-pass count, mean recall over
 curated datasets, and total leakage.
 
-### Running two models in parallel
+### Running models in parallel
 
-To compare e.g. gemma2:9b vs gemma4:12b, each person runs `run_all.py` with a different
-`--model` and shares the scorecard (Ollama serializes calls per model, so run them on
-separate machines or sequentially). The samples are identical, so the scorecards are
-directly comparable.
+To compare models (e.g. local `gemma2:9b` vs local `gemma4:12b` vs cloud
+`gemma-4-31b-it`), each person runs `run_all.py` with a different `--model`/`--provider`
+and shares the scorecard. Ollama serializes calls per local model, so run local models on
+separate machines or sequentially; the cloud backend can run concurrently with a local
+one. The samples are identical, so the scorecards are directly comparable.
 
 ### Changing the sample size
 

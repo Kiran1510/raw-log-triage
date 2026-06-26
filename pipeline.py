@@ -51,16 +51,20 @@ OUTPUT_CONTRACT = """TASK:
 2. Identify lines indicating failures, errors, invalid states, anomalies, or security events.
 3. For each such line, return a JSON object with EXACTLY these keys:
    - service_name: the process/service/component that logged it; "unknown" if unclear.
-   - timestamp: copied exactly from the line; empty string if absent.
+   - timestamp: copied exactly as it appears in source_line (it MUST be a literal
+     substring of source_line); empty string if absent.
    - error_severity: exactly one of "warning", "error", or "fatal".
    - suggested_remediation: one actionable sentence.
-   - source_line: the exact original log line, copied verbatim.
+   - source_line: the exact original log line, copied verbatim character-for-character.
+     Do NOT fix whitespace, truncate, reorder, or paraphrase it.
 
 JUDGMENT RULES:
 - If a line carries an explicit level (INFO, DEBUG, NOTICE, WARN/WARNING, ERROR,
   FATAL, CRITICAL), respect it: treat INFO/DEBUG/NOTICE as routine and do NOT report
   them unless they unambiguously describe a failure. Map WARN->warning, ERROR->error,
-  FATAL/CRITICAL->fatal.
+  FATAL/CRITICAL->fatal. Levels may be single letters in some formats (e.g. Android:
+  V/D/I = verbose/debug/info = routine; W/E/F = warning/error/fatal) — follow the
+  log's own scheme as described in the profile.
 - Do NOT flag a line merely because it contains words like "invalid", "delete", "kill",
   "abort", or "fail" when those are part of a routine operation, data structure, or
   identifier name (e.g. "invalidSet", "NameSystem.delete"). Judge by whether the event

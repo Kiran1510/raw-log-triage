@@ -13,16 +13,25 @@ A JSON array of objects, each with:
 
 ## How to run
 
-```
+Score one output:
+
+```bash
 python evaluation/eval.py <input_log> <output_json> <dataset>
-# e.g.
-python evaluation/eval.py data/Linux.log my_output.json linux
-python evaluation/eval.py data/HDFS_2k.log my_output.json hdfs
+python evaluation/eval.py data/loghub/HDFS_2k.log out.json hdfs
+```
+
+Run the reference pipeline over **all 16 loghub datasets** and print an aggregate
+scorecard (local Ollama or free cloud Gemma — both use a Gemma model):
+
+```bash
+python evaluation/run_all.py --model gemma4:12b      # local, full quality
+python evaluation/run_all.py --model gemma2:9b       # local, faster
+export GEMINI_API_KEY=...                            # free: aistudio.google.com/apikey
+python evaluation/run_all.py --provider google       # cloud gemma-4-31b-it
 ```
 
 `<dataset>` selects ground-truth signatures from `signatures.py`. Unknown datasets fall
-back to a generic signature set (approximate). To add a loghub dataset, add an entry to
-`signatures.py`.
+back to a generic set (approximate). See [README.md](README.md) for full usage.
 
 ## Checks
 
@@ -31,7 +40,7 @@ back to a generic signature set (approximate). To add a loghub dataset, add an e
 | A | JSON validity | hard | Parses as a JSON array |
 | B | Schema completeness | hard | Every object has all 6 contract fields |
 | C | Severity validity | hard | `error_severity` ∈ {warning, error, fatal} |
-| D | No hallucination | hard | Every `source_line` exists verbatim in the input |
+| D | No hallucination | hard | Every `source_line` exists in the input (whitespace-insensitive; pure reformatting is reported separately, not failed) |
 | E | Timestamp fidelity | hard | `timestamp` is a substring of its `source_line` (or empty) |
 | F | Dedup | hard | No duplicate `(service_name, timestamp, source_line)` |
 | G | occurrence_count sane | hard | Each ≥ 1; **sum ≤ input line count** (fabrication guard) |
@@ -42,62 +51,75 @@ back to a generic signature set (approximate). To add a loghub dataset, add an e
 
 Headline metrics: **Recall**, **Benign leakage**, and pass/fail on A–G.
 
-## Expectations — Linux.log (25,567 lines)
+## Ground-truth strategy (`signatures.py`)
 
-**Must be covered (recall):** `authentication failure` (dominant), `Out of Memory / Killed
-process`, `ALERT exited abnormally` (logrotate), `ttloop: peer died` (telnetd), `page
-allocation failure` (httpd), `Kerberos authentication fail`, `gethostbyname error`
-(format-string attack), `register_security failed`, `Failure registering capabilities`,
-`Invalid ACPI-PCI IRQ routing table`, `cdrom: open failed`, `bind failed` / `Service
-telnet failed` (xinetd), `mdmpd failed`, `recovery required on readonly filesystem`,
-`couldn't add command channel`.
+Two ways to define truth, chosen per dataset:
 
-**Must NOT appear (precision):** `startup succeeded`, `session opened/closed`,
-`Linux version`, `Kernel command line`, `BIOS-e820`.
+- **Level-based** — the log has an explicit severity field, so `error` = WARN/ERROR/FATAL
+  and `benign` = INFO/DEBUG. Used for: **HDFS, BGL, Hadoop, OpenStack, Spark, Zookeeper,
+  Android** (single-letter `V/D/I` vs `W/E/F`), **Windows** (`Info`/`Warning`/`Error`).
+  This directly tests the pipeline's level-awareness.
+- **Keyword-based** — curated phrase regexes. Used for: **Apache** (`[error]` vs
+  `[notice]`), **HPC, HealthApp, Linux, Mac, OpenSSH, Proxifier, Thunderbird**.
+- **DEFAULT** — generic error/benign keywords for any dataset without a curated entry.
 
-## Expectations — HDFS_2k.log (2,000 lines)
+### Dataset overview (loghub 2k samples)
 
-**Must be covered:** `Got exception while serving` (DataXceiver WARN; only non-INFO family).
-**Must NOT appear:** routine INFO ops — `PacketResponder … terminating`, `blockMap updated`,
-`Receiving/Received block`, `verification succeeded`, `NameSystem.delete`/`invalidSet`.
-**Other:** severity should map from explicit `WARN` → `warning`; exception family
-`occurrence_count` should total ≈ 80.
+Template counts after dedup vary widely — a few datasets saturate fast, others stay
+diverse (and OpenStack's UUIDs/request-ids defeat the current masking):
+
+| low-diversity | mid | high-diversity |
+|---|---|---|
+| Apache 12, Spark 40, HDFS 41, Zookeeper 60 | HPC 73, Windows 75, HealthApp 75, Hadoop 138, Linux 148 | Android 186, OpenSSH 186, Thunderbird 261, Mac 404, BGL 466, Proxifier 544, **OpenStack 1500** |
+
+## Per-dataset expectations (curated)
+
+**Linux.log** — must cover: `authentication failure` (dominant), `Out of Memory / Killed
+process`, `ALERT exited abnormally`, `ttloop: peer died`, `page allocation failure`,
+`Kerberos authentication fail`, `gethostbyname error`, `register_security failed`,
+`Failure registering capabilities`, `Invalid ACPI-PCI IRQ routing table`, `cdrom: open
+failed`, `bind failed`/`Service telnet failed`, `mdmpd failed`, `recovery required on
+readonly filesystem`, `couldn't add command channel`. Must NOT flag: `startup succeeded`,
+`session opened/closed`, `Linux version`, `Kernel command line`, `BIOS-e820`.
+
+**HDFS_2k.log** — must cover `Got exception while serving` (DataXceiver WARN). Must NOT
+flag routine INFO ops (`PacketResponder … terminating`, `blockMap updated`, `NameSystem.
+delete`/`invalidSet`). Severity maps from `WARN` → `warning`; exception family count ≈ 80.
 
 ## Results
 
-### HDFS_2k.log — before vs. after the precision improvements
+### Cross-dataset baseline — `gemma2:9b`, 300-line samples (pre-tuning)
 
-| Metric | Baseline | + level-awareness / anti-keyword-trap |
+Preserved in [`../results/`](../results/). **9/16 hard-pass · 88% mean recall (curated) ·
+10 benign leakage.** Failures were mostly `gemma2:9b` hallucination/timestamp sloppiness
+(`D`/`E`) on android/bgl/hadoop/mac/thunderbird/windows/zookeeper, plus benign leakage on
+the leveled datasets (android 5, bgl 4, hadoop 1). Spark correctly returned `[]`.
+
+### Tuning iteration 1 (verbatim source_line, timestamp-as-substring, single-letter levels)
+### + cloud `gemma-4-31b-it`
+
+_(scorecard added when the cloud pass completes; early datasets show the `D`/`E` failures
+clearing and android leakage dropping 5 → 1.)_
+
+### HDFS — precision fix (before vs. after level-awareness / anti-keyword-trap)
+
+| Metric | Baseline | After |
 |---|---|---|
 | Entries | 4 | 2 |
-| **Benign leakage** | 2 (`NameSystem.delete … invalidSet` flagged) | **0** |
+| **Benign leakage** | 2 (`NameSystem.delete … invalidSet`) | **0** |
 | Recall | 100% | 100% |
-| Hard checks A–G | PASS | PASS |
 
-The two false positives (routine INFO block GC) were eliminated with no recall loss by
-teaching Stage 2 to trust explicit log levels and not flag on keyword presence inside
-routine identifiers.
+### Linux.log — full 25,567 lines (gemma4:12b)
 
-### Linux.log — full 25,567 lines (gemma4:12b, two-stage)
+728 templates (from 1,116) → 531 after benign filter; 11 calls; 1,402 s; 75 entries
+(22 fatal / 15 error / 38 warning). Hard checks **PASS**, benign leakage **0**, recall
+**53%** — the precision changes made it over-conservative on borderline boot/kernel errors
+(open tuning target).
 
-| Metric | Value |
-|---|---|
-| Templates after dedup masking | 728 (from 1,116) → 531 after benign filter |
-| Model calls | 11 | Wall-clock | 1,402 s |
-| Entries | 75 (22 fatal / 15 error / 38 warning) |
-| Hard checks A–G | **PASS** (0 hallucinations; 11 whitespace-reformatted lines handled by the evaluator) |
-| Benign leakage | 0 |
-| **Recall** | **53%** (8/15 signatures) |
+## Limitations
 
-**Finding:** the precision-focused prompt changes (level-awareness + anti-keyword-trap)
-made the model **over-conservative on Linux**, missing borderline boot/kernel errors
-(`ALERT exited abnormally`, ACPI IRQ table, `mdmpd failed`, EXT3 recovery, …). Recall is
-the open tuning target — to be balanced via the cross-dataset loop without re-introducing
-the HDFS false positives.
-
-## Cross-dataset benchmark
-
-All 16 loghub datasets are scored uniformly via `run_all.py` on 300-line samples; see the
-generated scorecard. Spark (all-INFO) is a precision trap — the correct output is `[]`,
-which the level-aware pipeline produces. OpenStack exposes a dedup weakness (UUIDs/request
-IDs aren't masked → ~1,500 templates from 2,000 lines), a known tuning target.
+- Recall/precision are **signature proxies** — only as good as `signatures.py`; level-based
+  truth assumes the log's own level field is correct (e.g. Windows logs some failures at
+  `Info`, which we treat as benign).
+- 300-line samples **under-cover** high-diversity datasets — fine for comparing prompt
+  versions, not for absolute recall. The hard checks (A–G) are exact and model-independent.
