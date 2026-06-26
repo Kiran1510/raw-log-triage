@@ -1,5 +1,11 @@
 # HACKATHON HANDOFF — Log Triage Pipeline
 
+> ⚠️ **Historical / superseded.** This documents the original `requests`-based, 100-line-chunk
+> prototype and its TODO list. The current tool (`pipeline.py`) has since moved to stdlib
+> `urllib`, template dedup, a two-stage profile→triage design, argparse, and local/cloud Gemma
+> backends. For the current state see [README.md](README.md) and [OVERVIEW.md](OVERVIEW.md);
+> kept here for project history.
+
 ## Context
 
 5-hour hackathon. Theme: "AI-First Developer Efficiencies." Pure code, no frontend UIs allowed. We chose Track 2: The Raw Log Triage Pipeline (Log-to-JSON).
