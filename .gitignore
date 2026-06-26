@@ -5,6 +5,8 @@ full_stdout.json
 
 # Run/debug artifacts
 *_stderr.txt
+*.stderr
+twostage_smoke.json
 empty_test.txt
 
 # Redundant raw download (data lives in Linux.log)
