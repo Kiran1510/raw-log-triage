@@ -1,0 +1,58 @@
+[
+  {
+    "service_name": "gmetad",
+    "timestamp": "2005.11.09 12:01:26",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate why gmetad is unable to resolve data source names.",
+    "source_line": "tbird-admin1 Nov 9 12:01:26 local@tbird-admin1 /apps/x86_64/system/ganglia-3.0.1/sbin/gmetad[1682]: Warning: we failed to resolve data source name an142 an143 an144 an145 an146 an147 an148 an149 an150 an151 an152 an153 an154 an155 an156 an157 an158 an159 an160 an161 an162 an163 an164 an165 an166 an167 an168 an169 an170 an171 an172 an173 an174 an175 an176 an177 an178 an179 an180 an181 an182 an183 an184 an185 an186 an187 an188 an189 an190 an191 an192 an193 an194 an195 an196 an197 an198 an199 an200 an201 an202 an203 an204 an205 an206 an207 an208 an209 an210 an211 an212 an213 an214 an215 an216 an217 an218 an219 an220 an221 an222 an223 an224 an225 an226 an227 an228 an229 an230 an231 an232 an233 an234 an235 an236 an237 an238 an239 an240 an241 an242 an243 an244 an245 an246 an247 an248 an249 an250 an251 an252 an253 an254 an255 an256",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "gmetad",
+    "timestamp": "2005.11.09 12:01:34",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate why gmetad is unable to resolve data source names.",
+    "source_line": "tbird-admin1 Nov 9 12:01:34 local@tbird-admin1 /apps/x86_64/system/ganglia-3.0.1/sbin/gmetad[1682]: Warning: we failed to resolve data source name [Thunderbird_A4]",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "gmetad",
+    "timestamp": "2005.11.09 12:01:37",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate why gmetad is unable to resolve data source names.",
+    "source_line": "tbird-admin1 Nov 9 12:01:37 local@tbird-admin1 /apps/x86_64/system/ganglia-3.0.1/sbin/gmetad[1682]: Warning: we failed to resolve data source name [Thunderbird_B4]",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "gmetad",
+    "timestamp": "2005.11.09 12:03:57",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate why gmetad is unable to update RRD data for C Nodes/cn304/pkts_out.rrd.",
+    "source_line": "tbird-admin1 Nov 9 12:03:57 local@tbird-admin1 /apps/x86_64/system/ganglia-3.0.1/sbin/gmetad[1682]: RRD_update (/var/lib/ganglia/rrds/C Nodes/cn304/pkts_out.rrd): illegal attempt to update using time 1131563037 when last update time is 1131563037 (minimum one second step)",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "sendmail",
+    "timestamp": "2005.11.09 12:10:32",
+    "error_severity": "error",
+    "suggested_remediation": "Configure sendmail to resolve its hostname or check network connectivity.",
+    "source_line": "badmin1 Nov 9 12:10:32 src@badmin1 sendmail[14256]: My unqualified host name (badmin1) unknown; sleeping for retry",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "gmetad",
+    "timestamp": "2005.11.09 12:10:54",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate why gmetad failed to resolve trusted host names.",
+    "source_line": "- 1131567054 2005.11.09 tbird-admin1 Nov 9 12:10:54 local@tbird-admin1 gmetad: Warning: we failed to resolve trusted host name dadmin3 dadmin4",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "sshd",
+    "timestamp": "2005.11.09 12:10:55",
+    "error_severity": "error",
+    "suggested_remediation": "Check if another process is using port 22 and release it.",
+    "source_line": "- 1131567055 2005.11.09 tbird-admin1 Nov 9 12:10:55 local@tbird-admin1 sshd[1761]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.",
+    "occurrence_count": 1
+  }
+]

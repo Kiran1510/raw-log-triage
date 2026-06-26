@@ -1,0 +1,26 @@
+[
+  {
+    "service_name": "LearnerHandler",
+    "timestamp": "2015-07-29 19:20:16,690",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate the unexpected exception causing shutdown in the LearnerHandler.",
+    "source_line": " - ERROR [LearnerHandler-/10.10.34.12:59455:LearnerHandler@562] - Unexpected exception causing shutdown while sock still open",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "QuorumCnxManager",
+    "timestamp": "2015-07-29 19:16:24,348",
+    "error_severity": "warning",
+    "suggested_remediation": "Check the connection status and investigate why a connection was broken for id 188978561024.",
+    "source_line": " - WARN  [RecvWorker:188978561024:QuorumCnxManager$RecvWorker@762] - Connection broken for id 188978561024, my id = 1, error = ",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "NIOServerCxn.Factory",
+    "timestamp": "2015-07-29 19:52:05,118",
+    "error_severity": "warning",
+    "suggested_remediation": "Examine the logs for more details about the end of stream exception caught by the NIOServerCxn.Factory.",
+    "source_line": " - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCxn@349] - caught end of stream exception",
+    "occurrence_count": 1
+  }
+]

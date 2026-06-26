@@ -1,0 +1,58 @@
+[
+  {
+    "service_name": "mod_jk",
+    "timestamp": "[Sun Dec 04 04:51:55 2005]",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate why the workerEnv child is in error state 6.",
+    "source_line": "[Sun Dec 04 04:51:55 2005] [error] mod_jk child workerEnv in error state 6",
+    "occurrence_count": 47
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "[Sun Dec 04 15:18:36 2005]",
+    "error_severity": "error",
+    "suggested_remediation": "Review the directory access rules to ensure they are correctly configured.",
+    "source_line": "[Sun Dec 04 15:18:36 2005] [error] [client 67.154.58.130] Directory index forbidden by rule: /var/www/html/",
+    "occurrence_count": 2
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "[Sun Dec 04 17:43:08 2005]",
+    "error_severity": "error",
+    "suggested_remediation": "Check the Apache configuration and child process management to ensure child 1567 is properly registered.",
+    "source_line": "[Sun Dec 04 17:43:08 2005] [error] jk2_init() Can't find child 1567 in scoreboard",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "mod_jk",
+    "timestamp": "[Mon Dec 05 03:25:46 2005]",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate why the workerEnv child is in error state 6.",
+    "source_line": "[Mon Dec 05 03:25:46 2005] [error] mod_jk child workerEnv in error state 6",
+    "occurrence_count": 42
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "[Mon Dec 05 10:48:48 2005]",
+    "error_severity": "error",
+    "suggested_remediation": "Review the directory access rules to ensure they are correctly configured.",
+    "source_line": "[Mon Dec 05 10:48:48 2005] [error] [client 67.166.248.235] Directory index forbidden by rule: /var/www/html/",
+    "occurrence_count": 2
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "[Mon Dec 05 11:06:52 2005]",
+    "error_severity": "error",
+    "suggested_remediation": "Check the Apache configuration and child process management to ensure child 5619 is properly registered.",
+    "source_line": "[Mon Dec 05 11:06:52 2005] [error] jk2_init() Can't find child 5619 in scoreboard",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "mod_jk",
+    "timestamp": "[Mon Dec 05 11:06:52 2005]",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate the child initialization failure for init 1 with status -2.",
+    "source_line": "[Mon Dec 05 11:06:52 2005] [error] mod_jk child init 1 -2",
+    "occurrence_count": 1
+  }
+]

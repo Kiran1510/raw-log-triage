@@ -1,0 +1,98 @@
+[
+  {
+    "service_name": "RAS KERNEL",
+    "timestamp": "2005-08-27-18.49.52.912954",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate why the Node card status indicates no ALERTs are active, Clock Mode is Low, Clock Select is Midplane, Phy JTAG Reset is asserted, ASIC JTAG Reset is asserted, Temperature Mask is not active, and No temperature error. PGOOD IS NOT ASSERTED. PGOOD ERROR LATCH IS ACTIVE. The 2.5 volt rail is OK. The 1.5 volt rail is OK.",
+    "source_line": "1125193792 2005.08.27 R11-M1-N7 NULL DISCOVERY ERROR Node card status: no ALERTs are active. Clock Mode is Low. Clock Select is Midplane. Phy JTAG Reset is asserted. ASIC JTAG Reset is asserted. Temperature Mask is not active. No temperature error. Temperature Limit Error Latch is clear. PGOOD IS NOT ASSERTED. PGOOD ERROR LATCH IS ACTIVE. The 2.5 volt rail is OK. The 1.5 volt rail is OK.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "RAS KERNEL",
+    "timestamp": "2005-09-02-06.35.17.592760",
+    "error_severity": "fatal",
+    "suggested_remediation": "Check the filesystem for the specified path and ensure the directory exists.",
+    "source_line": "1125668117 2005.09.02 06.35.17.592760 R72-M1-N4-I:J18-U01 RAS APP FATAL ciod: LOGIN chdir(/bglscratch/bwallen/SWL/SYS-CALLS/testcases/kernel/syscalls/truncate) failed: No such file or directory",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "RAS KERNEL",
+    "timestamp": "2005-09-04-15.01.11.038078",
+    "error_severity": "fatal",
+    "suggested_remediation": "Verify the Lustre mount point is correctly configured and accessible.",
+    "source_line": "KERNMNTF 1126202752 2005.09.08-11.05.52.800796 R01-M1-N4-I:J18-U11 RAS KERNEL FATAL Lustre mount FAILED : bglio23 : point /p/gb1",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "RAS APP",
+    "timestamp": "2005-09-10-23.46.15.250215",
+    "error_severity": "fatal",
+    "suggested_remediation": "Ensure the specified program image exists at the given path and is accessible.",
+    "source_line": "1126421175 2005.09.10-23.46.15.250215 R16-M0-NC-I:J18-U01 RAS APP FATAL ciod: Error loading /home/yates//torus-latency.rts: invalid or missing program image, No such file or directory",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "RAS KERNEL",
+    "timestamp": "2005-10-06-04.24.48.021229",
+    "error_severity": "fatal",
+    "suggested_remediation": "Verify the specified program image exists at the given path and is accessible.",
+    "source_line": "APPSEV 1129550629 2005.10.06-04.24.48.021229 R56-M0-N0-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to 172.16.96.116:53591: Link has been severed",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "RAS KERNEL",
+    "timestamp": "2005-11-03-08.44.00.733074",
+    "error_severity": "fatal",
+    "suggested_remediation": "Ensure the specified program image exists at the given path and is accessible.",
+    "source_line": "1131036240 2005.11.03-08.44.00.733074 R06-M0-NC-I:J18-U11 RAS APP FATAL ciod: Error loading /home.old/glosli/src/ddcMD/ddcMD1.1.17/bin/ddcMDGbglV: invalid or missing program image, No such file or directory",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "2005-11-10-19.38.42.369022",
+    "error_severity": "fatal",
+    "suggested_remediation": "Investigate why the kernel terminated.",
+    "source_line": "KERNTERM 1131680322 2005.11.10 R63-M0-N6-C:J12-U11 2005-11-10-19.38.42.369022 R63-M0-N6-C:J12-U11 RAS KERNEL FATAL rts: kernel terminated for reason 1004",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "2005-12.09-00.38.10.632331",
+    "error_severity": "warning",
+    "suggested_remediation": "Monitor for further DDR errors.",
+    "source_line": "R70-M0-N7-C:J15-U01 RAS KERNEL INFO 1 ddr error(s) detected and corrected on rank 0, symbol 9 over 986 seconds",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "2005-12.09-04.13.41.810977",
+    "error_severity": "warning",
+    "suggested_remediation": "Monitor for further DDR errors.",
+    "source_line": "R34-M1-NB-C:J17-U11 RAS KERNEL INFO total of 5 ddr error(s) detected and corrected over 9108 seconds",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "2005-12.09-12.49.48.361835",
+    "error_severity": "fatal",
+    "suggested_remediation": "Investigate why the program failed to load.",
+    "source_line": "R07-M0-N8-I:J18-U11 2005-12-09-12.49.48.361835 R07-M0-N8-I:J18-U11 RAS APP FATAL ciod: Error loading /bgl/apps/SWL/stability/HPL/WORK/1501./hpl_DD: invalid or missing program image, No such file or directory",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "2005-12.16-17.58.00.577715",
+    "error_severity": "warning",
+    "suggested_remediation": "Check the debugger status and ensure it is functioning correctly.",
+    "source_line": "R66-M0-N8-I:J18-U01 2005-12-16-17.58.00.577715 R66-M0-N8-I:J18-U01 RAS KERNEL INFO ciod: pollControlDescriptors: Detected the debugger died.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "2005-12.18-17.15.03.147145",
+    "error_severity": "warning",
+    "suggested_remediation": "Monitor for further DDR errors.",
+    "source_line": "R13-M1-N1-C:J03-U01 2005-12-18-17.15.03.147145 R13-M1-N1-C:J03-U01 RAS KERNEL INFO total of 3 ddr error(s) detected and corrected over 8732 seconds",
+    "occurrence_count": 1
+  }
+]

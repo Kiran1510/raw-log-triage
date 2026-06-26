@@ -1,0 +1,26 @@
+[
+  {
+    "service_name": "org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl",
+    "timestamp": "2015-10-18 18:06:26,139",
+    "error_severity": "fatal",
+    "suggested_remediation": "Investigate network connectivity between MININT-FNANLI5 and msra-sa-41. Ensure proper routing is configured.",
+    "source_line": "ERROR [eventHandlingThread] org.apache.hadoop.yarn.YarnUncaughtExceptionHandler: Thread Thread[eventHandlingThread,5,main] threw an Exception.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "org.apache.hadoop.mapred.TaskAttemptListenerImpl",
+    "timestamp": "2015-10-18 18:06:26,029",
+    "error_severity": "error",
+    "suggested_remediation": "Check network connectivity between MININT-FNANLI5 and msra-sa-41. Verify firewall rules and routing configurations.",
+    "source_line": "ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "org.apache.hadoop.mapred.TaskAttemptListenerImpl",
+    "timestamp": "2015-10-18 18:06:26,029",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate network connectivity issues between MININT-FNANLI5 and msra-sa-41. Ensure proper routing is configured.",
+    "source_line": "INFO [IPC Server handler 13 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1445144423722_0020_m_000002_0: Error: java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost",
+    "occurrence_count": 1
+  }
+]

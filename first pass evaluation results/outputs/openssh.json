@@ -1,0 +1,26 @@
+[
+  {
+    "service_name": "sshd",
+    "timestamp": "Dec 10 11:03:53",
+    "error_severity": "fatal",
+    "suggested_remediation": "Investigate the network connection for potential issues.",
+    "source_line": "Dec 10 11:03:53 LabSZ sshd[25457]: fatal: Write failed: Connection reset by peer [preauth]",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "sshd",
+    "timestamp": "Dec 10 11:04:34",
+    "error_severity": "warning",
+    "suggested_remediation": "Review user accounts for potential unauthorized access attempts.",
+    "source_line": "Dec 10 11:04:34 LabSZ sshd[25527]: Invalid user test from 103.99.0.122",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "sshd",
+    "timestamp": "Dec 10 11:04:38",
+    "error_severity": "warning",
+    "suggested_remediation": "Verify user account credentials and permissions.",
+    "source_line": "Dec 10 11:04:38 LabSZ sshd[25534]: input_userauth_request: invalid user guest [preauth]",
+    "occurrence_count": 1
+  }
+]

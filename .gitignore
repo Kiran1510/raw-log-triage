@@ -1,7 +1,7 @@
 # Generated outputs and run logs (root-level JSON/log is pipeline output)
 /*.json
 /*.log
-outputs/
+/outputs/
 *.stderr
 *_stderr.txt
 empty_test.txt

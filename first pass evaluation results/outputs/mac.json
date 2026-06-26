@@ -1,0 +1,178 @@
+[
+  {
+    "service_name": "com.apple.cts",
+    "timestamp": "Jul  2 17:36:15 calvisitor-10-105-163-202",
+    "error_severity": "warning",
+    "suggested_remediation": "Check the Safari logs for more details about the KeychainGetICDPStatus error.",
+    "source_line": "Jul  2 17:36:15 calvisitor-10-105-163-202 Safari[9852]: KeychainGetICDPStatus: keychain: -25300",
+    "occurrence_count": 5
+  },
+  {
+    "service_name": "com.apple.geod",
+    "timestamp": "Jul  2 19:34:33 calvisitor-10-105-163-202",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate why the Geolocation service request timed out.",
+    "source_line": "Jul  2 19:34:33 calvisitor-10-105-163-202 com.apple.geod[30311]: PBRequester failed with Error Error Domain=NSURLErrorDomain Code=-1001 \"The request timed out.\"",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "com.apple.WebKit.WebContent",
+    "timestamp": "Jul  2 22:32:34 authorMacBook-Pro",
+    "error_severity": "warning",
+    "suggested_remediation": "Review the WebKit logs for more details about the unexpected preroll-complete notification.",
+    "source_line": "Jul  2 22:32:34 authorMacBook-Pro com.apple.WebKit.WebContent[32778]: [22:32:34.846] <<<< Boss >>>> figPlaybackBossPrerollCompleted: unexpected preroll-complete notification",
+    "occurrence_count": 7
+  },
+  {
+    "service_name": "com.apple.AddressBook.InternetAccountsBridge",
+    "timestamp": "Jul  3 05:58:10 authorMacBook-Pro",
+    "error_severity": "warning",
+    "suggested_remediation": "Check the network connectivity and DNS settings.",
+    "source_line": "Jul  3 05:58:10 authorMacBook-Pro com.apple.AddressBook.InternetAccountsBridge[33109]: dnssd_clientstub ConnectToServer: connect()-> No of tries: 3",
+    "occurrence_count": 7
+  },
+  {
+    "service_name": "com.apple.WebKit.WebContent",
+    "timestamp": "Jul  3 11:31:49.472",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate the FigAgglomeratorSetObjectForKey method for potential issues.",
+    "source_line": "Jul  3 11:31:49.472 : [11:31:49.472] FigAgglomeratorSetObjectForKey signalled err=-16020 (kFigStringConformerError_ParamErr) (NULL key) at /Library/Caches/com.apple.xbs/Sources/CoreMedia/CoreMedia-1731.15.207/Prototypes/LegibleOutput/FigAgglomerator.c line 92",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "com.apple.WebKit.WebContent",
+    "timestamp": "Jul  3 12:11:47.043",
+    "error_severity": "error",
+    "suggested_remediation": "Examine the itemasync_CopyProperty method for potential issues with invalidated objects.",
+    "source_line": "Jul  3 12:11:47.043 : [12:11:47.043] itemasync_CopyProperty signalled err=-12785 (kFigBaseObjectError_Invalidated) (invalidated) at /Library/Caches/com.apple.xbs/Sources/CoreMedia/CoreMedia-1731.15.207/Prototypes/Player/FigPlayer_Async.c line 2092",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "Jul  4 18:20:56 calvisitor-10-105-162-105",
+    "error_severity": "warning",
+    "suggested_remediation": "Review the com.apple.suggestions.harvest activity for potential scheduling conflicts.",
+    "source_line": "Jul  4 18:20:56 calvisitor-10-105-162-105 com.apple.cts[258]: com.apple.suggestions.harvest: scheduler_evaluate_activity told me to run this job; however, but the start time isn't for 40 seconds.  Ignoring.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "Jul  4 16:58:55 calvisitor-10-105-162-105",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the potential conflict between implementations of TSUCustomFormatData.",
+    "source_line": "Jul  4 16:58:55 calvisitor-10-105-162-105 QuickLookSatellite[35448]: objc[35448]: Class TSUCustomFormatData is implemented in both /Library/QuickLook/iWork.qlgenerator/Contents/MacOS/iWork and /System/Library/PrivateFrameworks/OfficeImport.framework/Versions/A/OfficeImport. One of the two will be used. Which one is undefined.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "Jul  4 23:10:28 calvisitor-10-105-162-105",
+    "error_severity": "error",
+    "suggested_remediation": "Check for issues with the CalendarAgent and its interaction with CalDAV.",
+    "source_line": "Jul  4 23:10:28 calvisitor-10-105-162-105 CalendarAgent[279]: [com.apple.calendar.store.log.caldav.coredav] [Refusing to parse response to PROPPATCH because of content-type: [text/html; charset=UTF-8].]",
+    "occurrence_count": 2
+  },
+  {
+    "service_name": "Microsoft Word",
+    "timestamp": "Jul  4 18:20:56 calvisitor-10-105-162-105",
+    "error_severity": "error",
+    "suggested_remediation": "Review the scripting error in Microsoft Word and ensure proper formatting of four-character codes.",
+    "source_line": "Jul  4 18:20:56 calvisitor-10-105-162-105 Microsoft Word[14463]: Cocoa scripting error for '0x03600009': four character codes must be four characters long.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "Jul  5 00:21:07 authorMacBook-Pro",
+    "error_severity": "warning",
+    "suggested_remediation": "Update the code to use -hasPreciseScrollingDeltas instead of -continuousScroll.",
+    "source_line": "Jul  5 00:21:07 authorMacBook-Pro Google Chrome[35628]: -_continuousScroll is deprecated for NSScrollWheel. Please use -hasPreciseScrollingDeltas.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "QQ",
+    "timestamp": "Jul  4 10:58:22 calvisitor-10-105-160-179",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the potential conflict between FaceTime and other notifications.",
+    "source_line": "Jul  4 10:58:22 calvisitor-10-105-160-179 imagent[355]: <IMMacNotificationCenterManager: 0x7fdcc9d16380>: notification observer: com.apple.FaceTime   notification: __CFNotification 0x7fdcc9d19110 {name = _NSDoNotDisturbEnabledNotification}",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "unknown",
+    "timestamp": "Jul  4 23:50:59 calvisitor-10-105-162-105",
+    "error_severity": "warning",
+    "suggested_remediation": "Review the potential conflict between implementations of TSUCustomFormatData.",
+    "source_line": "Jul  4 23:50:59 calvisitor-10-105-162-105 QuickLookSatellite[35448]: objc[35448]: Class TSUCustomFormatData is implemented in both /Library/QuickLook/iWork.qlgenerator/Contents/MacOS/iWork and /System/Library/PrivateFrameworks/OfficeImport.framework/Versions/A/OfficeImport. One of the two will be used. Which one is undefined.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "kernel",
+    "timestamp": "Jul  7 10:54:41 calvisitor-10-105-162-178",
+    "error_severity": "warning",
+    "suggested_remediation": "Review the ksfetch logs for more details about the update check process.",
+    "source_line": "Jul  7 10:54:41 calvisitor-10-105-162-178 GoogleSoftwareUpdateAgent[37924]: 2017-07-07 10:54:41.875 GoogleSoftwareUpdateAgent[37924/0x7000002a0000] [lvl=2] -[KSUpdateCheckAction performAction] KSUpdateCheckAction starting update check for ticket(s): {( <KSTicket:0x100365950 productID=com.google.Chrome version=59.0.3071.115 xc=<KSPathExistenceChecker:0x10036e950 path=/Applications/Google Chrome.app> serverType=Omaha url=https://tools.google.com/service/update2 creationDate=2017-02-18 15:41:18 tagPath=/Applications/Google Chrome.app/Contents/Info.plist tagKey=KSChannelID brandPath=/Users/xpc/Library/Google/Google Chrome Brand.plist brandKey=KSBrandID versionPath=/Applications/Google Chrome.app/Contents/Info.plist versionKey=KSVersion cohort=1:1y5: cohortName=Stable ticketVersion=1 > )} Using server: <KSOmahaServer:0x100243f20 engine=<KSUpdateEngine:0x1007161b0> >",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "kernel",
+    "timestamp": "Jul  7 13:48:27 authorMacBook-Pro kernel[0]: ARPT: 770812.035971: AirPort_Brcm43xx::powerChange: System Wake - Full Wake/ Dark Wake / Maintenance wake",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the system logs for any events related to power management or network connectivity around this time.",
+    "source_line": "Jul  7 13:48:27 authorMacBook-Pro kernel[0]: ARPT: 770812.035971: AirPort_Brcm43xx::powerChange: System Wake - Full Wake/ Dark Wake / Maintenance wake",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "locationd",
+    "timestamp": "Jul  7 17:30:00 calvisitor-10-105-160-85 locationd[82]: PBRequester failed with Error Error Domain=NSURLErrorDomain Code=-1009 \"The Internet connection appears to be offline.\"",
+    "error_severity": "error",
+    "suggested_remediation": "Check your network connection and ensure that the device has internet access.",
+    "source_line": "Jul  7 17:30:00 calvisitor-10-105-160-85 locationd[82]: PBRequester failed with Error Error Domain=NSURLErrorDomain Code=-1009 \"The Internet connection appears to be offline.\"",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "QuickLookSatellite",
+    "timestamp": "Jul  7 16:30:00 calvisitor-10-105-160-85 QuickLookSatellite[38418]: nw_path_evaluator_start_helper_connection net_helper_path_evaluation_start failed, dumping backtrace: [x86_64] libnetcore-583.50.1 0   libsystem_network.dylib             0x00007fff92fabde9 __nw_create_backtrace_string + 123 1   libsystem_network.dylib             0x00007fff92fc289f nw_path_evaluator_start_helper_connection + 196 2   libdispatch.dylib                   0x00007fff980fa93d _dispatch_call_block_and_release + 12 3   libdispatch.dylib                   0x00007fff980ef40b _dispatch_client_callout + 8 4   libdispatch.dylib                   0x00007fff980f403b _dispatch_queue_drain + 754 5   libdispatch.dylib                   0x00007fff980fa707 _dispatch_queue_invoke + 549 6   libdispatch.dylib                   0x00007fff980f2d53 _dispatch_root_queue_drain + 538 7   libdispatch.dylib                   0x00007fff980f2b00 _dispatch_worker_thread3 + 91 8   libsystem_pthread.dylib             0x00007fff8ebc44de _pthread_wqthread + 1129 9   libsystem_pthread.dylib             0x00007fff8ebc2341 start_wqthread + 13",
+    "error_severity": "error",
+    "suggested_remediation": "Check the system logs for more details about the network helper connection failure and investigate potential network connectivity issues.",
+    "source_line": "Jul  7 16:30:00 calvisitor-10-105-160-85 QuickLookSatellite[38418]: nw_path_evaluator_start_helper_connection net_helper_path_evaluation_start failed, dumping backtrace: [x86_64] libnetcore-583.50.1 0   libsystem_network.dylib             0x00007fff92fabde9 __nw_create_backtrace_string + 123 1   libsystem_network.dylib             0x00007fff92fc289f nw_path_evaluator_start_helper_connection + 196 2   libdispatch.dylib                   0x00007fff980fa93d _dispatch_call_block_and_release + 12 3   libdispatch.dylib                   0x00007fff980ef40b _dispatch_client_callout + 8 4   libdispatch.dylib                   0x00007fff980f403b _dispatch_queue_drain + 754 5   libdispatch.dylib                   0x00007fff980fa707 _dispatch_queue_invoke + 549 6   libdispatch.dylib                   0x00007fff980f2d53 _dispatch_root_queue_drain + 538 7   libdispatch.dylib                   0x00007fff980f2b00 _dispatch_worker_thread3 + 91 8   libsystem_pthread.dylib             0x00007fff8ebc44de _pthread_wqthread + 1129 9   libsystem_pthread.dylib             0x00007fff8ebc2341 start_wqthread + 13",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "cdpd",
+    "timestamp": "Jul  7 18:09:41 authorMacBook-Pro cdpd[11807]: Saw change in network reachability (isReachable=0)",
+    "error_severity": "warning",
+    "suggested_remediation": "Check your network connection and ensure that the device has internet access.",
+    "source_line": "Jul  7 18:09:41 authorMacBook-Pro cdpd[11807]: Saw change in network reachability (isReachable=0)",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "GPUToolsAgent",
+    "timestamp": "Jul  7 20:39:28 calvisitor-10-105-160-85 GPUToolsAgent[38749]: schedule invalidation <DYTransport 0x7f89e8c00520, error: lost transport connection (31)>",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the system logs for any events related to GPU or network connectivity around this time.",
+    "source_line": "Jul  7 20:39:28 calvisitor-10-105-160-85 GPUToolsAgent[38749]: schedule invalidation <DYTransport 0x7f89e8c00520, error: lost transport connection (31)>",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "com.apple.WebKit.Networking",
+    "timestamp": "Jul  7 20:44:13 calvisitor-10-105-160-85 com.apple.WebKit.Networking[9854]: NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9806)",
+    "error_severity": "error",
+    "suggested_remediation": "Check your network connection and ensure that the device has internet access.",
+    "source_line": "Jul  7 20:44:13 calvisitor-10-105-160-85 com.apple.WebKit.Networking[9854]: NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9806)",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "blued",
+    "timestamp": "Jul  8 04:18:45 calvisitor-10-105-161-176",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate the Bluetooth HID device controller for connection issues.",
+    "source_line": "blued[85]: [BluetoothHIDDeviceController]ERROR: Could not find the disconnected object",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "Mail",
+    "timestamp": "Jul  8 05:52:04 authorMacBook-Pro",
+    "error_severity": "error",
+    "suggested_remediation": "Check for compatibility issues with the received XSSimpleTypeDefinition.",
+    "source_line": "Mail[11203]: Unrecognized XSSimpleTypeDefinition: OneOff",
+    "occurrence_count": 1
+  }
+]

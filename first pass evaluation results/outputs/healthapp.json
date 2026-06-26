@@ -1,0 +1,10 @@
+[
+  {
+    "service_name": "HiH_HiHealthBinder",
+    "timestamp": "20171223-22:19:58:411",
+    "error_severity": "error",
+    "suggested_remediation": "Investigate the 'ERR_DATA_INSERT' error during bulkSaveDetailHiHealthData.",
+    "source_line": "20171223-22:19:58:411|HiH_HiHealthBinder|30002312|insertHiHealthData() bulkSaveDetailHiHealthData fail errorCode = 4,errorMessage = ERR_DATA_INSERT",
+    "occurrence_count": 1
+  }
+]

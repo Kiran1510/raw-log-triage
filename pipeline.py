@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import re
+import ssl
 import sys
 import time
 import urllib.error
@@ -11,8 +12,26 @@ OLLAMA_URL = "http://localhost:11434/api/chat"
 # Google AI Studio's OpenAI-compatible endpoint serves Gemma for free (needs a key).
 GOOGLE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 # Default Gemma model per backend (both backends use a Gemma model, per the rules).
-PROVIDER_DEFAULT_MODEL = {"ollama": "gemma4:12b", "google": "gemma-3-27b-it"}
+PROVIDER_DEFAULT_MODEL = {"ollama": "gemma4:12b", "google": "gemma-4-31b-it"}
 REQUEST_TIMEOUT = 600  # seconds per model call
+
+
+def _make_ssl_context() -> ssl.SSLContext:
+    """Build an SSL context with a usable CA bundle. python.org Python on macOS
+    doesn't trust the system roots by default, so fall back to common bundles."""
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        for p in ("/etc/ssl/cert.pem",                       # macOS
+                  "/etc/ssl/certs/ca-certificates.crt",       # Debian/Ubuntu
+                  "/etc/pki/tls/certs/ca-bundle.crt"):        # RHEL/Fedora
+            if os.path.exists(p):
+                return ssl.create_default_context(cafile=p)
+    return ssl.create_default_context()
+
+
+_SSL_CONTEXT = _make_ssl_context()
 
 # ---------------------------------------------------------------------------
 # Output contract (fixed by us, never delegated to the model). Whatever prompt
@@ -209,13 +228,18 @@ def call_gemma(content: str, system_prompt: str, model: str,
     req = urllib.request.Request(
         url, data=json.dumps(payload).encode("utf-8"),
         headers=headers, method="POST")
-    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
+    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT,
+                                context=_SSL_CONTEXT) as resp:
         body = json.loads(resp.read().decode("utf-8"))
     return content_path(body)
 
 
+# Some Gemma models (e.g. gemma-4 via the cloud API) emit reasoning traces.
+_THINK_RE = re.compile(r"<(thought|think|thinking)>.*?</\1>", re.I | re.S)
+
+
 def _strip_fences(raw: str) -> str:
-    text = raw.strip()
+    text = _THINK_RE.sub("", raw).strip()
     if text.startswith("```"):
         text = text.split("\n", 1)[1] if "\n" in text else text[3:]
     if text.endswith("```"):
@@ -501,8 +525,7 @@ def main():
                              "Google AI Studio, needs GEMINI_API_KEY). Default: ollama")
     parser.add_argument("--model", default=None,
                         help="Gemma model for both stages. Defaults per provider: "
-                             "ollama=gemma4:12b, google=gemma-3-27b-it "
-                             "(also: gemma-4-31b-it)")
+                             "ollama=gemma4:12b, google=gemma-4-31b-it")
     parser.add_argument("--filter", action="store_true",
                         help="Keyword pre-filter before dedup (faster, lower recall)")
     parser.add_argument("--no-profile", action="store_true",

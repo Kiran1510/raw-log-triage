@@ -1,0 +1,18 @@
+[
+  {
+    "service_name": "dfs.DataNode$DataXceiver",
+    "timestamp": "081109 215136 2868",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the exception while serving block blk_8466246428293623262 to /10.251.106.37.",
+    "source_line": "081109 215136 2868 WARN dfs.DataNode$DataXceiver: 10.251.199.19:50010:Got exception while serving blk_8466246428293623262 to /10.251.106.37:",
+    "occurrence_count": 5
+  },
+  {
+    "service_name": "dfs.DataNode$DataXceiver",
+    "timestamp": "081109 215259 2934",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the exception while serving block blk_-3140754468249228022 to /10.250.9.207.",
+    "source_line": "081109 215259 2934 WARN dfs.DataNode$DataXceiver: 10.250.9.207:50010:Got exception while serving blk_-3140754468249228022 to /10.250.9.207:",
+    "occurrence_count": 2
+  }
+]

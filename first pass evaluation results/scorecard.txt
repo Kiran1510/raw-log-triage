@@ -1,0 +1,21 @@
+==============================================================================
+dataset       entries      hard  recall  leak  cur
+------------------------------------------------------------------------------
+android             5    FAIL:D   100%     5    y
+apache              7      PASS   100%     0    y
+bgl                12  FAIL:D,E   100%     4    y
+hadoop              3  FAIL:D,E   100%     1    y
+hdfs                2      PASS   100%     0    y
+healthapp           1      PASS   100%     0    y
+hpc                 0      PASS     0%     0    y
+linux               6      PASS   100%     0    y
+mac                22  FAIL:D,E   100%     0    y
+openssh             3      PASS   100%     0    y
+openstack           0      PASS     0%     0    y
+proxifier          13      PASS   100%     0    y
+spark               0      PASS   100%     0    y
+thunderbird         7  FAIL:D,E   100%     0    y
+windows             3  FAIL:D,E   100%     0    y
+zookeeper           3  FAIL:D,E   100%     0    y
+------------------------------------------------------------------------------
+hard-pass 9/16 | mean recall (curated) 88% | total leakage 10 | 2371s

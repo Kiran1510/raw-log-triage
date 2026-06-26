@@ -1,0 +1,26 @@
+[
+  {
+    "service_name": "CBS",
+    "timestamp": "2016-09-28 04:30:33",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the unrecognized packageExtended attribute for potential corruption.",
+    "source_line": "Warning: Unrecognized packageExtended attribute.",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "CBS",
+    "timestamp": "2016-09-28 04:30:33",
+    "error_severity": "error",
+    "suggested_remediation": "Check the package integrity and try reinstalling it.",
+    "source_line": "Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "CBS",
+    "timestamp": "2016-09-29 00:00:46",
+    "error_severity": "error",
+    "suggested_remediation": "Review the SQM logs for more details and troubleshoot any network connectivity issues.",
+    "source_line": "SQM: Failed to start standard sample upload. [HRESULT = 0x80004005 - E_FAIL]",
+    "occurrence_count": 1
+  }
+]

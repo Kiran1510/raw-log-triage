@@ -1,0 +1,42 @@
+[
+  {
+    "service_name": "ActivityManager",
+    "timestamp": "03-17 16:14:04.932",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate why ActivityManager is limiting output due to caller lacking REAL_GET_TASKS permission.",
+    "source_line": "03-17 16:14:04.932  1702  2555 I WindowManager: Destroying surface Surface(name=PopupWindow:9b04807) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.removeLocked:1554 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2739 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2702 com.android.server.wm.WindowManagerService.removeWindowLocked:2691 com.android.server.wm.WindowManagerService.removeWindowLocked:2560 com.android.server.wm.WindowManagerService.removeWindow:2555",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "ActivityManager",
+    "timestamp": "03-17 16:15:19.992",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the crash of com.tencent.mobileqq/cooperation.qzone.remote.logic.QzoneWebPluginProxyService and restart it.",
+    "source_line": "03-17 16:15:19.992  1702  2644 I ActivityManager: Process com.tencent.mobileqq:qzone (pid 12236) has died\n03-17 16:15:19.993  1702  2644 W ActivityManager: Scheduling restart of crashed service com.tencent.mobileqq/cooperation.qzone.remote.logic.QzoneWebPluginProxyService in 1000ms",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "WindowManager",
+    "timestamp": "03-17 16:15:47.974",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate why the ActivityManager is skipping recent tasks.",
+    "source_line": "03-17 16:15:47.974  1702 17630 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { act=android.intent.action.VIEW dat=file:///storage/emulated/0/Tencent/QQfile_recv/b.apk typ=application/vnd.android.package-archive flg=0x10800000 cmp=com.android.packageinstaller/.PackageInstallerActivity (has extras) }",
+    "occurrence_count": 2
+  },
+  {
+    "service_name": "WindowManager",
+    "timestamp": "03-17 16:15:49.528",
+    "error_severity": "warning",
+    "suggested_remediation": "Analyze why the NotificationManager is canceling notifications.",
+    "source_line": "03-17 16:15:49.528  1702  1702 I NotificationManager: cancelNotificationLocked,remove =com.tencent.mobileqq",
+    "occurrence_count": 1
+  },
+  {
+    "service_name": "WindowManager",
+    "timestamp": "03-17 16:15:49.568",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the reason for PhoneStatusBar's instant collapse.",
+    "source_line": "03-17 16:15:49.568  2227  2227 I PanelView: instantCollapse",
+    "occurrence_count": 1
+  }
+]
