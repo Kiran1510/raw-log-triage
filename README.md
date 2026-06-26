@@ -62,6 +62,21 @@ each teammate runs `run_all.py` with a different `--model` and diffs the scoreca
 Full instructions, the output contract, and how to add datasets:
 [evaluation/README.md](evaluation/README.md).
 
+## Backends: local or free cloud Gemma
+
+The pipeline runs against a **Gemma** model either way (per the hackathon rules):
+
+- **`--provider ollama`** (default): local `gemma4:12b` via Ollama. Self-contained, no key.
+- **`--provider google`**: free Gemma on Google AI Studio (Gemini API) — `gemma-3-27b-it`
+  by default (or `--model gemma-4-31b-it`). Faster/bigger than the local model, no cost.
+
+```bash
+# one-time: grab a free key (no credit card) at https://aistudio.google.com/apikey
+export GEMINI_API_KEY=...
+python pipeline.py data/HDFS_2k.log -o out.json --provider google
+python evaluation/run_all.py --provider google          # whole benchmark on cloud Gemma
+```
+
 ## How it works
 
 1. **Deduplicate** — collapse repeated log templates (e.g. 25,567 lines → ~700 unique),

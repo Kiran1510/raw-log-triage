@@ -75,10 +75,15 @@ ollama pull gemma2:9b       # faster
 ### Run
 
 ```bash
-# from the repo root:
+# from the repo root (local Ollama, default):
 python evaluation/run_all.py --model gemma4:12b      # one full pass, all 16 datasets
 python evaluation/run_all.py --model gemma2:9b       # faster pass
 python evaluation/run_all.py --only hdfs,linux,bgl   # a subset
+
+# free cloud Gemma (Google AI Studio) — no local model needed:
+export GEMINI_API_KEY=...        # free key: https://aistudio.google.com/apikey
+python evaluation/run_all.py --provider google                      # gemma-3-27b-it
+python evaluation/run_all.py --provider google --model gemma-4-31b-it
 ```
 
 Per-dataset JSON is written to `outputs/<dataset>.json` (gitignored). The scorecard

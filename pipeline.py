@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -7,7 +8,10 @@ import urllib.error
 import urllib.request
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
-DEFAULT_MODEL = "gemma4:12b"
+# Google AI Studio's OpenAI-compatible endpoint serves Gemma for free (needs a key).
+GOOGLE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+# Default Gemma model per backend (both backends use a Gemma model, per the rules).
+PROVIDER_DEFAULT_MODEL = {"ollama": "gemma4:12b", "google": "gemma-3-27b-it"}
 REQUEST_TIMEOUT = 600  # seconds per model call
 
 # ---------------------------------------------------------------------------
@@ -170,26 +174,44 @@ def dedup_templates(lines: list, use_filter: bool) -> list:
 # ---------------------------------------------------------------------------
 # Model I/O
 # ---------------------------------------------------------------------------
-def call_gemma(content: str, system_prompt: str, model: str) -> str:
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": content},
-        ],
-        "stream": False,
-        "think": False,
-        "options": {"temperature": 0},
-    }
+def call_gemma(content: str, system_prompt: str, model: str,
+               provider: str = "ollama") -> str:
+    """Send a system+user prompt to the chosen backend and return the text reply.
+
+    provider="ollama" -> local Ollama REST API (gemma4:12b).
+    provider="google" -> Google AI Studio's free, OpenAI-compatible Gemini API serving
+                         a Gemma model (needs GEMINI_API_KEY).
+    """
+    if provider == "google":
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            raise RuntimeError("GEMINI_API_KEY is not set. Get a free key at "
+                               "https://aistudio.google.com/apikey and export it.")
+        # Gemma models on the Gemini API have no separate system role, so fold the
+        # system prompt into the single user turn.
+        url = GOOGLE_URL
+        payload = {"model": model,
+                   "messages": [{"role": "user",
+                                 "content": f"{system_prompt}\n\n{content}"}],
+                   "temperature": 0, "stream": False}
+        headers = {"Content-Type": "application/json",
+                   "Authorization": f"Bearer {api_key}"}
+        content_path = lambda b: b["choices"][0]["message"]["content"]
+    else:  # ollama (local)
+        url = OLLAMA_URL
+        payload = {"model": model,
+                   "messages": [{"role": "system", "content": system_prompt},
+                                {"role": "user", "content": content}],
+                   "stream": False, "think": False, "options": {"temperature": 0}}
+        headers = {"Content-Type": "application/json"}
+        content_path = lambda b: b["message"]["content"]
+
     req = urllib.request.Request(
-        OLLAMA_URL,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
+        url, data=json.dumps(payload).encode("utf-8"),
+        headers=headers, method="POST")
     with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
         body = json.loads(resp.read().decode("utf-8"))
-    return body["message"]["content"]
+    return content_path(body)
 
 
 def _strip_fences(raw: str) -> str:
@@ -222,13 +244,13 @@ def extract_profile_json(raw: str) -> dict:
 # ---------------------------------------------------------------------------
 # Stage 1: build the log profile
 # ---------------------------------------------------------------------------
-def build_profile(templates: list, model: str, sample_size: int):
+def build_profile(templates: list, model: str, sample_size: int, provider: str = "ollama"):
     """Run one model call over a sample of templates to learn how to triage
     this log. Returns a normalized profile dict, or None on failure."""
     sample = sorted(templates, key=lambda t: t["occurrence_count"], reverse=True)
     sample_text = "\n".join(t["source_line"] for t in sample[:sample_size])
     try:
-        raw = call_gemma(sample_text, PROFILER_SYSTEM_PROMPT, model)
+        raw = call_gemma(sample_text, PROFILER_SYSTEM_PROMPT, model, provider)
         profile = extract_profile_json(raw)
     except (urllib.error.URLError, TimeoutError, OSError,
             json.JSONDecodeError, ValueError, KeyError) as e:
@@ -296,7 +318,8 @@ def validate_entries(entries: list) -> list:
     return valid
 
 
-def triage(templates: list, chunk_size: int, system_prompt: str, model: str):
+def triage(templates: list, chunk_size: int, system_prompt: str, model: str,
+           provider: str = "ollama"):
     """Run the model over unique templates. Returns (errors, num_calls)."""
     rep_lines = [t["source_line"] for t in templates]
     count_by_line = {t["source_line"]: t["occurrence_count"] for t in templates}
@@ -309,7 +332,7 @@ def triage(templates: list, chunk_size: int, system_prompt: str, model: str):
               f"of {len(rep_lines)}...", file=sys.stderr)
         try:
             num_calls += 1
-            parsed = extract_json(call_gemma(chunk, system_prompt, model))
+            parsed = extract_json(call_gemma(chunk, system_prompt, model, provider))
         except (urllib.error.URLError, TimeoutError, OSError) as e:
             # Network/timeout: retrying the same chunk usually times out again.
             # Skip it so one slow chunk never loses the whole run's progress.
@@ -322,7 +345,7 @@ def triage(templates: list, chunk_size: int, system_prompt: str, model: str):
                 parsed = extract_json(call_gemma(
                     "Your previous output was not valid JSON. "
                     "Return ONLY a valid JSON array.\n\n" + chunk,
-                    system_prompt, model,
+                    system_prompt, model, provider,
                 ))
             except (urllib.error.URLError, TimeoutError, OSError,
                     json.JSONDecodeError, ValueError, KeyError):
@@ -372,8 +395,13 @@ def main():
                         help="Output JSON file (default: output.json)")
     parser.add_argument("--chunk-size", type=int, default=50,
                         help="Unique lines per model call (default: 50)")
-    parser.add_argument("--model", default=DEFAULT_MODEL,
-                        help=f"Ollama model for both stages (default: {DEFAULT_MODEL})")
+    parser.add_argument("--provider", choices=["ollama", "google"], default="ollama",
+                        help="Backend: 'ollama' (local) or 'google' (free Gemma via "
+                             "Google AI Studio, needs GEMINI_API_KEY). Default: ollama")
+    parser.add_argument("--model", default=None,
+                        help="Gemma model for both stages. Defaults per provider: "
+                             "ollama=gemma4:12b, google=gemma-3-27b-it "
+                             "(also: gemma-4-31b-it)")
     parser.add_argument("--filter", action="store_true",
                         help="Keyword pre-filter before dedup (faster, lower recall)")
     parser.add_argument("--no-profile", action="store_true",
@@ -381,6 +409,7 @@ def main():
     parser.add_argument("--profile-sample", type=int, default=120,
                         help="Templates sampled for Stage 1 profiling (default: 120)")
     args = parser.parse_args()
+    model = args.model or PROVIDER_DEFAULT_MODEL[args.provider]
 
     start = time.perf_counter()
 
@@ -394,8 +423,8 @@ def main():
     unique_count = len(templates)
     profile = None
     if templates and not args.no_profile:
-        print(f"Stage 1: profiling log format ({args.model})...", file=sys.stderr)
-        profile = build_profile(templates, args.model, args.profile_sample)
+        print(f"Stage 1: profiling log format ({args.provider}:{model})...", file=sys.stderr)
+        profile = build_profile(templates, model, args.profile_sample, args.provider)
 
     if profile:
         print("Stage 1 profile:", file=sys.stderr)
@@ -413,7 +442,7 @@ def main():
         errors, num_calls = [], 0
     else:
         print("Stage 2: triaging...", file=sys.stderr)
-        errors, num_calls = triage(templates, args.chunk_size, system_prompt, args.model)
+        errors, num_calls = triage(templates, args.chunk_size, system_prompt, model, args.provider)
 
     with open(args.output, "w") as f:
         json.dump(errors, f, indent=2)

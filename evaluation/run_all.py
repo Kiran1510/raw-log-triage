@@ -23,7 +23,8 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="gemma2:9b")
+    ap.add_argument("--provider", choices=["ollama", "google"], default="ollama")
+    ap.add_argument("--model", default=None, help="default per provider")
     ap.add_argument("--samples-dir", default="data/samples")
     ap.add_argument("--chunk-size", type=int, default=50)
     ap.add_argument("--outputs-dir", default="outputs")
@@ -40,11 +41,12 @@ def main():
         if only and ds not in only:
             continue
         out = os.path.join(args.outputs_dir, f"{ds}.json")
-        print(f"\n### {ds} (model={args.model}) ###", flush=True)
-        r = subprocess.run(
-            [sys.executable, "pipeline.py", sp, "-o", out,
-             "--model", args.model, "--chunk-size", str(args.chunk_size)],
-            cwd=REPO, capture_output=True, text=True)
+        print(f"\n### {ds} (provider={args.provider} model={args.model or 'default'}) ###", flush=True)
+        cmd = [sys.executable, "pipeline.py", sp, "-o", out,
+               "--provider", args.provider, "--chunk-size", str(args.chunk_size)]
+        if args.model:
+            cmd += ["--model", args.model]
+        r = subprocess.run(cmd, cwd=REPO, capture_output=True, text=True)
         if r.returncode != 0:
             print(f"  pipeline FAILED: {r.stderr[-300:]}")
             rows.append({"dataset": ds, "entries": "ERR", "hard_pass": False,
