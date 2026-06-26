@@ -33,6 +33,16 @@ OUTPUT_CONTRACT = """TASK:
    - suggested_remediation: one actionable sentence.
    - source_line: the exact original log line, copied verbatim.
 
+JUDGMENT RULES:
+- If a line carries an explicit level (INFO, DEBUG, NOTICE, WARN/WARNING, ERROR,
+  FATAL, CRITICAL), respect it: treat INFO/DEBUG/NOTICE as routine and do NOT report
+  them unless they unambiguously describe a failure. Map WARN->warning, ERROR->error,
+  FATAL/CRITICAL->fatal.
+- Do NOT flag a line merely because it contains words like "invalid", "delete", "kill",
+  "abort", or "fail" when those are part of a routine operation, data structure, or
+  identifier name (e.g. "invalidSet", "NameSystem.delete"). Judge by whether the event
+  is a genuine failure or anomaly, not by keyword presence.
+
 Return ONLY a valid JSON array of these objects. No markdown fences, no explanation,
 no preamble. If no errors are found, return an empty array: []"""
 
@@ -54,6 +64,9 @@ PROFILER_SYSTEM_PROMPT = (
     '- "format_description": one sentence naming the log type/format.\n'
     '- "service_hint": one sentence on how to identify the service/component name.\n'
     '- "timestamp_hint": one sentence describing the timestamp format, or "none".\n'
+    '- "severity_scheme": one sentence on how to judge severity. If the log has an '
+    'explicit level field (INFO/WARN/ERROR/...), say so and that it should be trusted; '
+    'otherwise say severity must be inferred from message content.\n'
     '- "benign_patterns": array of short lowercase substrings that mark ROUTINE, '
     'HEALTHY, successful, non-error lines (e.g. "startup succeeded", '
     '"session opened", "accepted password"). Be conservative: never include text '
@@ -67,6 +80,7 @@ PROFILE_KEYS = {
     "format_description",
     "service_hint",
     "timestamp_hint",
+    "severity_scheme",
     "benign_patterns",
     "triage_guidance",
 }
@@ -75,6 +89,7 @@ DEFAULT_PROFILE = {
     "format_description": "raw system/server logs of an unknown format",
     "service_hint": "the token before the first colon, if present",
     "timestamp_hint": "leading timestamp if present",
+    "severity_scheme": "infer severity from message content; trust any explicit level field if present",
     "benign_patterns": [],
     "triage_guidance": (
         "Flag lines containing failures, errors, invalid states, denials, timeouts, "
@@ -95,6 +110,9 @@ KEYWORD_RE = re.compile(
 )
 
 _PID_RE = re.compile(r"\[\d+\]")
+# Mask the VALUE of key=value tokens (e.g. rhost=host, user=root, tty=NODEVssh) so
+# templates collapse across the varying values. The keys still define the template.
+_KV_RE = re.compile(r"([A-Za-z_][\w-]*)=\S+")
 _IP_RE = re.compile(r"\b\d{1,3}(?:\.\d{1,3}){3}\b")
 _HEX_RE = re.compile(r"\b0x[0-9a-fA-F]+\b")
 _NUM_RE = re.compile(r"\d+")
@@ -109,6 +127,7 @@ def template_key(line: str) -> str:
     if m:
         text = m.group("body")
     text = _PID_RE.sub("[]", text)
+    text = _KV_RE.sub(r"\1=#", text)
     text = _IP_RE.sub("#", text)
     text = _HEX_RE.sub("#", text)
     text = _NUM_RE.sub("#", text)
@@ -220,7 +239,8 @@ def build_profile(templates: list, model: str, sample_size: int):
         return None
 
     clean = dict(DEFAULT_PROFILE)
-    for k in ("format_description", "service_hint", "timestamp_hint", "triage_guidance"):
+    for k in ("format_description", "service_hint", "timestamp_hint",
+              "severity_scheme", "triage_guidance"):
         v = profile.get(k)
         if isinstance(v, str) and v.strip():
             clean[k] = v.strip()
@@ -238,7 +258,8 @@ def compose_extraction_prompt(profile: dict) -> str:
         f"You are a log triage tool analyzing {profile['format_description']}.\n\n"
         "LOG FORMAT NOTES:\n"
         f"- Service/component: {profile['service_hint']}\n"
-        f"- Timestamp: {profile['timestamp_hint']}\n\n"
+        f"- Timestamp: {profile['timestamp_hint']}\n"
+        f"- Severity: {profile['severity_scheme']}\n\n"
         "TRIAGE GUIDANCE FOR THIS LOG:\n"
         f"{profile['triage_guidance']}\n\n"
         + OUTPUT_CONTRACT

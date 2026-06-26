@@ -1,15 +1,11 @@
-# Generated pipeline output
-output.json
-full_stdout.json
-*_out.json
-
-# Run/debug artifacts
-*_stderr.txt
+# Generated outputs and run logs (root-level JSON is always pipeline output)
+/*.json
+outputs/
 *.stderr
-twostage_smoke.json
+*_stderr.txt
 empty_test.txt
 
-# Redundant raw download (data lives in Linux.log)
+# Redundant raw download (data lives in data/)
 linux_logs.tar.gz
 
 # Python
