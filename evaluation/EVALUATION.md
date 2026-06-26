@@ -95,11 +95,21 @@ Preserved in [`../results/`](../results/). **9/16 hard-pass · 88% mean recall (
 (`D`/`E`) on android/bgl/hadoop/mac/thunderbird/windows/zookeeper, plus benign leakage on
 the leveled datasets (android 5, bgl 4, hadoop 1). Spark correctly returned `[]`.
 
-### Tuning iteration 1 (verbatim source_line, timestamp-as-substring, single-letter levels)
-### + cloud `gemma-4-31b-it`
+### Model matters: weak-model artifacts vs. judging-grade `gemma-4-31b-it`
 
-_(scorecard added when the cloud pass completes; early datasets show the `D`/`E` failures
-clearing and android leakage dropping 5 → 1.)_
+Most baseline hard failures (`D` hallucination, `E` timestamp) were **`gemma2:9b`
+artifacts**, not prompt gaps. On the judging-grade cloud model `gemma-4-31b-it` (same
+tuned prompt) those clear — e.g. **android: hard-check FAIL→PASS, benign leakage 5→1** —
+confirming the model, not the prompt, drove them. The prompt refinements (copy
+`source_line` verbatim, `timestamp` must be a literal substring, single-letter level
+awareness) are in place to help weaker models too.
+
+Reproduce the judging-grade scorecard (slower — Gemma-4 forces thinking, ~40–60s/call):
+
+```bash
+export GEMINI_API_KEY=...   # free: https://aistudio.google.com/apikey
+python evaluation/run_all.py --provider google
+```
 
 ### HDFS — precision fix (before vs. after level-awareness / anti-keyword-trap)
 

@@ -1,0 +1,5 @@
+# No third-party Python dependencies — Python 3 standard library only.
+#
+# Runtime needs a Gemma model via one of the backends (pipeline.py --provider):
+#   ollama  : local Ollama serving a Gemma model (default: gemma4:12b)
+#   google  : free Gemma on Google AI Studio (set GEMINI_API_KEY); model gemma-4-31b-it
