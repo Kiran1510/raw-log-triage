@@ -1,0 +1,34 @@
+[
+  {
+    "service_name": "dfs.DataNode$DataXceiver",
+    "timestamp": "081109 214043",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the network path or disk health of DataNode 10.251.30.85 due to repeated exceptions while serving blocks.",
+    "source_line": "081109 214043 2561 WARN dfs.DataNode$DataXceiver: 10.251.30.85:50010:Got exception while serving blk_-2918118818249673980 to /10.251.90.64:",
+    "occurrence_count": 23
+  },
+  {
+    "service_name": "dfs.DataNode$DataXceiver",
+    "timestamp": "081109 214402",
+    "error_severity": "warning",
+    "suggested_remediation": "Investigate the network path or disk health of DataNode 10.251.126.255 due to repeated exceptions while serving blocks.",
+    "source_line": "081109 214402 2677 WARN dfs.DataNode$DataXceiver: 10.251.126.255:50010:Got exception while serving blk_8376667364205250596 to /10.251.91.159:",
+    "occurrence_count": 24
+  },
+  {
+    "service_name": "dfs.FSNamesystem",
+    "timestamp": "081110 020724",
+    "error_severity": "warning",
+    "suggested_remediation": "Manually inspect and repair the corrupted block blk_2568309208894455676 on DataNode 10.251.31.160.",
+    "source_line": "081110 020724 29 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_2568309208894455676 is added to invalidSet of 10.251.31.160:50010",
+    "occurrence_count": 33
+  },
+  {
+    "service_name": "dfs.FSNamesystem",
+    "timestamp": "081110 103026",
+    "error_severity": "warning",
+    "suggested_remediation": "Manually inspect and repair the corrupted block blk_-1233005817943453613 on DataNode 10.251.75.49.",
+    "source_line": "081110 103026 34 INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1233005817943453613 is added to invalidSet of 10.251.75.49:50010",
+    "occurrence_count": 32
+  }
+]
