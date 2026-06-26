@@ -1,0 +1,18 @@
+[
+  {
+    "service_name": "mod_jk",
+    "timestamp": "Sun Dec 04 04:47:44 2005",
+    "error_severity": "error",
+    "suggested_remediation": "Restart the Tomcat worker or check the mod_jk configuration for worker state issues.",
+    "source_line": "[Sun Dec 04 04:47:44 2005] [error] mod_jk child workerEnv in error state 6",
+    "occurrence_count": 136
+  },
+  {
+    "service_name": "Apache",
+    "timestamp": "Sun Dec 04 05:15:09 2005",
+    "error_severity": "error",
+    "suggested_remediation": "Check the Directory permissions or update the web server configuration to allow index access for /var/www/html/.",
+    "source_line": "[Sun Dec 04 05:15:09 2005] [error] [client 222.166.160.184] Directory index forbidden by rule: /var/www/html/",
+    "occurrence_count": 1
+  }
+]
