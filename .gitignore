@@ -1,5 +1,6 @@
-# Generated outputs and run logs (root-level JSON is always pipeline output)
+# Generated outputs and run logs (root-level JSON/log is pipeline output)
 /*.json
+/*.log
 outputs/
 *.stderr
 *_stderr.txt

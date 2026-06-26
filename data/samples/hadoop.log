@@ -1,0 +1,300 @@
+2015-10-18 18:01:48,963 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: 20 cluster_timestamp: 1445144423722 } attemptId: 1 } keyId: -127633188)
+2015-10-18 18:01:50,556 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+2015-10-18 18:01:50,806 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+2015-10-18 18:01:51,197 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-10-18 18:01:51,650 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Number of reduces for job job_1445144423722_0020 = 1
+2015-10-18 18:01:51,791 INFO [main] org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+2015-10-18 18:01:51,885 INFO [main] org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-10-18 18:01:51,963 INFO [main] org.mortbay.log: jetty-6.1.26
+2015-10-18 18:01:52,728 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Web app /mapreduce started at 62267
+2015-10-18 18:01:53,447 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: maxTaskFailuresPerNode is 3
+2015-10-18 18:01:53,510 INFO [IPC Server listener on 62270] org.apache.hadoop.ipc.Server: IPC Server listener on 62270: starting
+2015-10-18 18:01:53,557 INFO [main] org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at msra-sa-41/10.190.173.170:8030
+2015-10-18 18:01:53,869 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+2015-10-18 18:01:53,869 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1445144423722_0020_m_000002 Task Transitioned from NEW to SCHEDULED
+2015-10-18 18:01:53,869 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1445144423722_0020_m_000003 Task Transitioned from NEW to SCHEDULED
+2015-10-18 18:01:53,869 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+2015-10-18 18:01:53,885 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+2015-10-18 18:01:53,885 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+2015-10-18 18:01:53,885 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1445144423722_0020_m_000008 Task Transitioned from NEW to SCHEDULED
+2015-10-18 18:01:53,885 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1445144423722_0020_m_000009 Task Transitioned from NEW to SCHEDULED
+2015-10-18 18:01:53,885 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1445144423722_0020_r_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2015-10-18 18:01:56,916 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:9 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:1 ContRel:0 HostLocal:0 RackLocal:1
+2015-10-18 18:01:57,104 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-jar file on the remote FS is hdfs://msra-sa-41:9000/tmp/hadoop-yarn/staging/msrabi/.staging/job_1445144423722_0020/job.jar
+2015-10-18 18:01:57,119 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Putting shuffle token in serviceData
+2015-10-18 18:01:57,291 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000002 taskAttempt attempt_1445144423722_0020_m_000000_0
+2015-10-18 18:01:57,916 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:7168, vCores:-20>
+2015-10-18 18:01:58,916 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:8 ScheduledReds:0 AssignedMaps:2 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:0 RackLocal:2
+2015-10-18 18:02:00,963 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:3072, vCores:-24>
+2015-10-18 18:02:00,963 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:02:00,963 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved MININT-FNANLI5.fareast.corp.microsoft.com to /default-rack
+2015-10-18 18:02:05,229 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:17,058 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:21,261 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:27,746 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:29,918 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:02:32,434 INFO [IPC Server handler 9 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.1066108
+2015-10-18 18:02:35,090 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:39,216 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:02:42,341 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:43,263 INFO [IPC Server handler 14 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.10660437
+2015-10-18 18:02:43,388 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:02:45,841 INFO [IPC Server handler 9 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+2015-10-18 18:02:46,482 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:02:47,841 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1445144423722_0020_m_000003_0 : 13562
+2015-10-18 18:02:47,841 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1445144423722_0020_m_000003 Task Transitioned from SCHEDULED to RUNNING
+2015-10-18 18:02:48,529 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1445144423722_0020: ask=4 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:0, vCores:-27> knownNMs=4
+2015-10-18 18:02:48,544 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:49,576 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:02:50,622 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:55,857 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:02:55,857 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:02:59,654 INFO [IPC Server handler 9 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.10635664
+2015-10-18 18:03:00,123 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:03:00,264 INFO [IPC Server handler 5 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.13841225
+2015-10-18 18:03:01,201 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:03:04,451 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:03:05,514 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:03:12,796 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:03:14,155 INFO [IPC Server handler 8 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+2015-10-18 18:03:25,406 INFO [IPC Server handler 12 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.19212553
+2015-10-18 18:03:26,984 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:03:32,250 INFO [IPC Server handler 2 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.19211523
+2015-10-18 18:03:34,844 INFO [IPC Server handler 12 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.19158794
+2015-10-18 18:03:38,500 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:03:45,876 INFO [IPC Server handler 4 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.27776006
+2015-10-18 18:03:46,282 INFO [IPC Server handler 13 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+2015-10-18 18:03:49,235 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:03:49,735 INFO [IPC Server handler 29 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.27772525
+2015-10-18 18:03:52,861 INFO [IPC Server handler 14 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+2015-10-18 18:03:54,361 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:03:55,408 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1445144423722_0020_01_000006 to attempt_1445144423722_0020_m_000004_0
+2015-10-18 18:03:55,408 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:4 ScheduledReds:0 AssignedMaps:6 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:6 ContRel:0 HostLocal:3 RackLocal:3
+2015-10-18 18:03:55,423 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+2015-10-18 18:03:55,595 INFO [ContainerLauncher #5] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+2015-10-18 18:03:55,939 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1445144423722_0020_m_000004_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2015-10-18 18:03:55,939 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1445144423722_0020_m_000004 Task Transitioned from SCHEDULED to RUNNING
+2015-10-18 18:03:55,939 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1445144423722_0020_m_000005
+2015-10-18 18:03:56,361 INFO [IPC Server handler 9 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+2015-10-18 18:03:56,548 INFO [ContainerLauncher #6] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : MSRA-SA-41.fareast.corp.microsoft.com:7109
+2015-10-18 18:03:57,533 INFO [Socket Reader #1 for port 62270] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1445144423722_0020 (auth:SIMPLE)
+2015-10-18 18:04:04,877 INFO [IPC Server handler 8 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000005_0 is : 0.10685723
+2015-10-18 18:04:04,877 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:04:04,877 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved MSRA-SA-41.fareast.corp.microsoft.com to /default-rack
+2015-10-18 18:04:04,877 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1445144423722_0020_m_000007_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2015-10-18 18:04:04,986 INFO [ContainerLauncher #7] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1445144423722_0020_01_000009 taskAttempt attempt_1445144423722_0020_m_000007_0
+2015-10-18 18:04:04,986 INFO [ContainerLauncher #7] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1445144423722_0020_m_000007_0
+2015-10-18 18:04:07,955 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:04:08,190 INFO [IPC Server handler 18 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.6199081
+2015-10-18 18:04:08,205 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1445144423722_0020_m_000008
+2015-10-18 18:04:08,877 INFO [IPC Server handler 20 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.106964506
+2015-10-18 18:04:08,987 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:04:08,987 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved MSRA-SA-39.fareast.corp.microsoft.com to /default-rack
+2015-10-18 18:04:09,096 INFO [ContainerLauncher #9] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1445144423722_0020_m_000009_0
+2015-10-18 18:04:10,002 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:10 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+2015-10-18 18:04:11,034 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:04:11,643 INFO [IPC Server handler 23 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1445144423722_0020_m_000010 asked for a task
+2015-10-18 18:04:11,643 INFO [IPC Server handler 23 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1445144423722_0020_m_000010 given task: attempt_1445144423722_0020_m_000008_0
+2015-10-18 18:04:11,924 INFO [IPC Server handler 20 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.106964506
+2015-10-18 18:04:12,065 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2015-10-18 18:04:16,768 INFO [IPC Server handler 19 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.32958937
+2015-10-18 18:04:17,425 INFO [IPC Server handler 2 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.667
+2015-10-18 18:04:19,753 INFO [IPC Server handler 19 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.295472
+2015-10-18 18:04:20,362 INFO [IPC Server handler 5 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000004_0 is : 0.19242907
+2015-10-18 18:04:20,394 INFO [IPC Server handler 29 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.36317363
+2015-10-18 18:04:20,550 INFO [IPC Server handler 2 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.667
+2015-10-18 18:04:20,800 INFO [IPC Server handler 22 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.27696857
+2015-10-18 18:04:22,784 INFO [IPC Server handler 19 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.295472
+2015-10-18 18:04:26,660 INFO [IPC Server handler 29 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.7198902
+2015-10-18 18:04:28,082 INFO [IPC Server handler 9 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.106881365
+2015-10-18 18:04:28,800 INFO [IPC Server handler 19 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.295472
+2015-10-18 18:04:29,707 INFO [IPC Server handler 0 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.7607953
+2015-10-18 18:04:30,379 INFO [IPC Server handler 12 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.2783809
+2015-10-18 18:04:32,738 INFO [IPC Server handler 29 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000003_0 is : 0.80356
+2015-10-18 18:04:41,739 INFO [IPC Server handler 17 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.27825075
+2015-10-18 18:04:45,567 INFO [IPC Server handler 22 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.36404583
+2015-10-18 18:04:46,661 INFO [IPC Server handler 22 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000008_0 is : 0.27811313
+2015-10-18 18:04:47,255 INFO [IPC Server handler 19 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000009_0 is : 0.667
+2015-10-18 18:04:47,942 INFO [IPC Server handler 21 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000007_0 is : 0.35880664
+2015-10-18 18:04:50,208 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1445144423722_0020_01_000005 taskAttempt attempt_1445144423722_0020_m_000003_0
+2015-10-18 18:04:50,755 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1445144423722_0020_m_000003_0 TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+2015-10-18 18:04:51,114 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=<memory:0, vCores:-27>
+2015-10-18 18:04:52,161 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:0 ScheduledMaps:1 ScheduledReds:1 AssignedMaps:10 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+2015-10-18 18:04:52,552 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:1 ScheduledReds:1 AssignedMaps:9 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:11 ContRel:1 HostLocal:7 RackLocal:3
+2015-10-18 18:04:52,880 INFO [IPC Server handler 9 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000000_0 is : 0.3624012
+2015-10-18 18:04:55,630 INFO [IPC Server handler 8 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000006_0 is : 0.44980705
+2015-10-18 18:04:56,318 INFO [IPC Server handler 16 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37322965
+2015-10-18 18:04:56,396 INFO [IPC Server handler 19 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000002_0 is : 0.38007197
+2015-10-18 18:05:36,570 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:05:37,617 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 40 seconds.  Will retry shortly ...
+2015-10-18 18:05:40,617 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 43 seconds.  Will retry shortly ...
+2015-10-18 18:05:44,633 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 47 seconds.  Will retry shortly ...
+2015-10-18 18:05:49,680 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:05:55,696 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:05:55,696 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 58 seconds.  Will retry shortly ...
+2015-10-18 18:06:00,731 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 63 seconds.  Will retry shortly ...
+2015-10-18 18:06:04,872 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:06:05,888 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:06:06,169 INFO [IPC Server handler 2 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+2015-10-18 18:06:08,903 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:06:11,935 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 74 seconds.  Will retry shortly ...
+2015-10-18 18:06:17,029 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:06:18,029 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:06:22,045 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:06:22,092 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:06:23,092 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:06:25,061 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:06:25,092 INFO [IPC Server handler 8 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1445144423722_0020_m_000001_0 is : 0.37551183
+2015-10-18 18:06:25,107 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:06:26,029 INFO [IPC Server handler 13 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1445144423722_0020_m_000002_0: Error: java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+2015-10-18 18:06:26,029 INFO [ContainerLauncher #1] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:52368
+2015-10-18 18:06:26,139 ERROR [eventHandlingThread] org.apache.hadoop.yarn.YarnUncaughtExceptionHandler: Thread Thread[eventHandlingThread,5,main] threw an Exception.
+2015-10-18 18:06:28,217 FATAL [IPC Server handler 4 on 62270] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1445144423722_0020_m_000001_0 - exited : java.net.NoRouteToHostException: No Route to Host from  MININT-FNANLI5/127.0.0.1 to msra-sa-41:9000 failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+2015-10-18 18:06:28,217 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1445144423722_0020_m_000001_0
+2015-10-18 18:06:31,092 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 93 seconds.  Will retry shortly ...
+2015-10-18 18:06:32,108 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:06:33,108 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:06:34,092 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 96 seconds.  Will retry shortly ...
+2015-10-18 18:06:34,108 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:06:35,093 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:06:35,108 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:06:38,140 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 100 seconds.  Will retry shortly ...
+2015-10-18 18:06:42,140 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 104 seconds.  Will retry shortly ...
+2015-10-18 18:06:44,156 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:06:45,156 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:06:46,124 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:06:48,140 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:06:51,203 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 113 seconds.  Will retry shortly ...
+2015-10-18 18:06:53,203 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 115 seconds.  Will retry shortly ...
+2015-10-18 18:06:54,203 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:06:56,156 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:06:57,156 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:06:58,203 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 120 seconds.  Will retry shortly ...
+2015-10-18 18:07:03,219 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 125 seconds.  Will retry shortly ...
+2015-10-18 18:07:05,219 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:06,188 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:07:09,188 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:07:12,189 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:07:13,189 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:07:14,267 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 136 seconds.  Will retry shortly ...
+2015-10-18 18:07:15,267 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:16,267 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 138 seconds.  Will retry shortly ...
+2015-10-18 18:07:19,298 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:21,298 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:23,189 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:07:23,314 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 145 seconds.  Will retry shortly ...
+2015-10-18 18:07:26,189 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:07:27,189 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:07:29,361 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:30,393 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:31,190 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:07:31,393 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:32,190 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:07:43,222 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:07:45,222 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:07:46,222 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:07:48,238 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:07:49,472 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:50,238 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:07:50,472 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:07:51,238 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:07:51,472 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 174 seconds.  Will retry shortly ...
+2015-10-18 18:07:52,238 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:07:54,238 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:07:56,238 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:07:57,473 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 180 seconds.  Will retry shortly ...
+2015-10-18 18:08:01,504 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:01,504 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 184 seconds.  Will retry shortly ...
+2015-10-18 18:08:02,238 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:08:03,504 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:04,504 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 187 seconds.  Will retry shortly ...
+2015-10-18 18:08:05,239 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:08:12,536 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:14,536 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:14,536 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 197 seconds.  Will retry shortly ...
+2015-10-18 18:08:15,536 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:15,536 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 198 seconds.  Will retry shortly ...
+2015-10-18 18:08:18,536 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 201 seconds.  Will retry shortly ...
+2015-10-18 18:08:23,537 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:24,537 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:25,537 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:28,303 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:08:28,303 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:08:29,537 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:31,537 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 214 seconds.  Will retry shortly ...
+2015-10-18 18:08:32,334 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:08:33,537 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 216 seconds.  Will retry shortly ...
+2015-10-18 18:08:34,537 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 217 seconds.  Will retry shortly ...
+2015-10-18 18:08:35,334 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:08:36,334 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:08:38,334 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:08:40,569 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:44,366 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:08:47,569 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:49,382 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:08:49,585 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:55,601 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:57,601 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:08:58,601 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 241 seconds.  Will retry shortly ...
+2015-10-18 18:09:01,601 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:09:02,601 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 245 seconds.  Will retry shortly ...
+2015-10-18 18:09:04,461 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:09:04,602 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:09:13,649 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:09:14,462 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:09:14,462 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:09:14,649 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 257 seconds.  Will retry shortly ...
+2015-10-18 18:09:15,462 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:09:16,649 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 259 seconds.  Will retry shortly ...
+2015-10-18 18:09:20,649 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 263 seconds.  Will retry shortly ...
+2015-10-18 18:09:22,462 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:09:23,462 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:09:23,681 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:09:23,681 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 266 seconds.  Will retry shortly ...
+2015-10-18 18:09:24,462 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:09:28,462 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:09:31,463 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:09:31,697 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:09:33,728 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 276 seconds.  Will retry shortly ...
+2015-10-18 18:09:34,728 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 277 seconds.  Will retry shortly ...
+2015-10-18 18:09:38,729 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:09:39,729 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:09:48,510 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:09:49,511 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:09:51,511 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:09:51,792 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 294 seconds.  Will retry shortly ...
+2015-10-18 18:09:55,823 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 298 seconds.  Will retry shortly ...
+2015-10-18 18:09:57,824 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 300 seconds.  Will retry shortly ...
+2015-10-18 18:10:03,855 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 306 seconds.  Will retry shortly ...
+2015-10-18 18:10:04,855 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:10:05,980 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:10:07,980 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 310 seconds.  Will retry shortly ...
+2015-10-18 18:10:09,981 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 312 seconds.  Will retry shortly ...
+2015-10-18 18:10:10,527 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:10:16,012 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 318 seconds.  Will retry shortly ...
+2015-10-18 18:10:20,012 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:10:20,528 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:10:23,044 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:10:23,044 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 325 seconds.  Will retry shortly ...
+2015-10-18 18:10:24,528 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:10:26,528 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:10:27,044 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 329 seconds.  Will retry shortly ...
+2015-10-18 18:10:27,544 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:10:29,044 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 331 seconds.  Will retry shortly ...
+2015-10-18 18:10:30,544 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:10:31,544 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:10:35,545 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:10:36,107 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:10:36,545 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:10:37,107 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:10:37,107 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.hdfs.LeaseRenewer: Failed to renew lease for [DFSClient_NONMAPREDUCE_1537864556_1] for 339 seconds.  Will retry shortly ...
+2015-10-18 18:10:37,545 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:10:38,545 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:10:41,107 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:10:41,545 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:10:42,107 WARN [LeaseRenewer:msrabi@msra-sa-41:9000] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:9000 New: msra-sa-41:9000
+2015-10-18 18:10:43,545 WARN [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Address change detected. Old: msra-sa-41/10.190.173.170:8030 New: msra-sa-41:8030
+2015-10-18 18:10:44,545 ERROR [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: ERROR IN CONTACTING RM. 
+2015-10-18 18:10:46,545 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:10:50,545 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-18 18:10:52,546 INFO [RMCommunicator Allocator] org.apache.hadoop.ipc.Client: Retrying connect to server: msra-sa-41:8030. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)

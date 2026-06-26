@@ -57,3 +57,46 @@ The repo's [`../pipeline.py`](../pipeline.py) is the reference two-stage triage 
 python pipeline.py data/HDFS_2k.log -o out.json     # produce output
 python evaluation/eval.py data/HDFS_2k.log out.json hdfs   # score it
 ```
+
+## Running the full benchmark (all 16 loghub datasets)
+
+The benchmark inputs are `data/samples/*.log` — a 300-line random sample per dataset
+(committed, so everyone runs the **same** inputs). `run_all.py` runs the pipeline on each,
+scores it, and prints an aggregate scorecard.
+
+### Prerequisites
+
+```bash
+# Ollama running, plus whichever model(s) you'll benchmark:
+ollama pull gemma4:12b      # full-quality
+ollama pull gemma2:9b       # faster
+```
+
+### Run
+
+```bash
+# from the repo root:
+python evaluation/run_all.py --model gemma4:12b      # one full pass, all 16 datasets
+python evaluation/run_all.py --model gemma2:9b       # faster pass
+python evaluation/run_all.py --only hdfs,linux,bgl   # a subset
+```
+
+Per-dataset JSON is written to `outputs/<dataset>.json` (gitignored). The scorecard
+columns: `entries`, `hard` (A–G pass/fail), `recall`, `leak` (benign leakage), `cur`
+(curated signatures vs generic). The footer gives hard-pass count, mean recall over
+curated datasets, and total leakage.
+
+### Running two models in parallel
+
+To compare e.g. gemma2:9b vs gemma4:12b, each person runs `run_all.py` with a different
+`--model` and shares the scorecard (Ollama serializes calls per model, so run them on
+separate machines or sequentially). The samples are identical, so the scorecards are
+directly comparable.
+
+### Changing the sample size
+
+Samples are reproducible from `data/loghub/` with a fixed seed:
+
+```bash
+python evaluation/make_samples.py 300     # default; use 2000 for the full loghub sample
+```

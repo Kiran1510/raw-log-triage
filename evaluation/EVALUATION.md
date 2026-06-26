@@ -78,7 +78,26 @@ The two false positives (routine INFO block GC) were eliminated with no recall l
 teaching Stage 2 to trust explicit log levels and not flag on keyword presence inside
 routine identifiers.
 
-### Linux.log
+### Linux.log — full 25,567 lines (gemma4:12b, two-stage)
 
-_(filled in after the improved full run completes; dedup masking reduced templates
-1,116 → 728, collapsing ~3,000 auth failures into one ranked finding.)_
+| Metric | Value |
+|---|---|
+| Templates after dedup masking | 728 (from 1,116) → 531 after benign filter |
+| Model calls | 11 | Wall-clock | 1,402 s |
+| Entries | 75 (22 fatal / 15 error / 38 warning) |
+| Hard checks A–G | **PASS** (0 hallucinations; 11 whitespace-reformatted lines handled by the evaluator) |
+| Benign leakage | 0 |
+| **Recall** | **53%** (8/15 signatures) |
+
+**Finding:** the precision-focused prompt changes (level-awareness + anti-keyword-trap)
+made the model **over-conservative on Linux**, missing borderline boot/kernel errors
+(`ALERT exited abnormally`, ACPI IRQ table, `mdmpd failed`, EXT3 recovery, …). Recall is
+the open tuning target — to be balanced via the cross-dataset loop without re-introducing
+the HDFS false positives.
+
+## Cross-dataset benchmark
+
+All 16 loghub datasets are scored uniformly via `run_all.py` on 300-line samples; see the
+generated scorecard. Spark (all-INFO) is a precision trap — the correct output is `[]`,
+which the level-aware pipeline produces. OpenStack exposes a dedup weakness (UUIDs/request
+IDs aren't masked → ~1,500 templates from 2,000 lines), a known tuning target.

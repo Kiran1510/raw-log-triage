@@ -1,0 +1,300 @@
+17/06/09 20:10:40 INFO spark.SecurityManager: Changing modify acls to: yarn,curi
+17/06/09 20:10:42 INFO executor.CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@10.10.34.11:48069
+17/06/09 20:10:42 INFO executor.CoarseGrainedExecutorBackend: Successfully registered with driver
+17/06/09 20:10:42 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40984.
+17/06/09 20:10:42 INFO storage.BlockManagerMaster: Trying to register BlockManager
+17/06/09 20:10:45 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1
+17/06/09 20:10:45 INFO broadcast.TorrentBroadcast: Started reading broadcast variable 9
+17/06/09 20:10:47 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+17/06/09 20:10:48 INFO broadcast.TorrentBroadcast: Reading broadcast variable 0 took 21 ms
+17/06/09 20:10:48 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 384.0 B, free 317.5 KB)
+17/06/09 20:10:48 INFO storage.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 93.0 B, free 319.0 KB)
+17/06/09 20:10:48 INFO python.PythonRunner: Times: total = 1078, boot = 851, init = 219, finish = 8
+17/06/09 20:10:48 INFO storage.MemoryStore: Block rdd_2_0 stored as bytes in memory (estimated size 913.0 B, free 323.0 KB)
+17/06/09 20:10:48 INFO storage.MemoryStore: Block rdd_2_4 stored as bytes in memory (estimated size 890.0 B, free 323.8 KB)
+17/06/09 20:10:48 INFO python.PythonRunner: Times: total = 38, boot = 11, init = 27, finish = 0
+17/06/09 20:10:48 INFO executor.Executor: Finished task 1.0 in stage 0.0 (TID 1). 2703 bytes result sent to driver
+17/06/09 20:10:52 INFO executor.Executor: Running task 1.0 in stage 1.0 (TID 56)
+17/06/09 20:10:52 INFO executor.Executor: Running task 2.0 in stage 1.0 (TID 69)
+17/06/09 20:10:52 INFO broadcast.TorrentBroadcast: Reading broadcast variable 10 took 17 ms
+17/06/09 20:10:52 INFO python.PythonRunner: Times: total = 42, boot = -4131, init = 4172, finish = 1
+17/06/09 20:10:52 INFO executor.Executor: Running task 1.0 in stage 2.0 (TID 101)
+17/06/09 20:10:52 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 118
+17/06/09 20:10:52 INFO storage.BlockManager: Found block rdd_2_0 locally
+17/06/09 20:10:52 INFO python.PythonRunner: Times: total = 41, boot = -139, init = 179, finish = 1
+17/06/09 20:10:52 INFO python.PythonRunner: Times: total = 38, boot = -156, init = 194, finish = 0
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 122
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 136
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 158
+17/06/09 20:10:53 INFO broadcast.TorrentBroadcast: Started reading broadcast variable 12
+17/06/09 20:10:53 INFO spark.CacheManager: Partition rdd_6_4 not found, computing it
+17/06/09 20:10:53 INFO storage.BlockManager: Found block rdd_2_1 locally
+17/06/09 20:10:53 INFO storage.BlockManager: Found block rdd_2_2 locally
+17/06/09 20:10:53 INFO python.PythonRunner: Times: total = 41, boot = -171, init = 212, finish = 0
+17/06/09 20:10:53 INFO storage.MemoryStore: Block rdd_6_1 stored as bytes in memory (estimated size 330.0 B, free 370.2 KB)
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 199
+17/06/09 20:10:53 INFO executor.Executor: Finished task 1.0 in stage 4.0 (TID 185). 2099 bytes result sent to driver
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 220
+17/06/09 20:10:53 INFO executor.Executor: Running task 1.0 in stage 5.0 (TID 220)
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 231
+17/06/09 20:10:53 INFO broadcast.TorrentBroadcast: Started reading broadcast variable 14
+17/06/09 20:10:53 INFO executor.Executor: Running task 4.0 in stage 5.0 (TID 239)
+17/06/09 20:10:53 INFO storage.MemoryStore: Block broadcast_14 stored as values in memory (estimated size 9.6 KB, free 401.9 KB)
+17/06/09 20:10:53 INFO executor.Executor: Finished task 4.0 in stage 5.0 (TID 239). 2198 bytes result sent to driver
+17/06/09 20:10:53 INFO executor.Executor: Running task 2.0 in stage 6.0 (TID 273)
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 278
+17/06/09 20:10:53 INFO storage.BlockManager: Found block rdd_2_1 locally
+17/06/09 20:10:53 INFO python.PythonRunner: Times: total = 39, boot = -103, init = 142, finish = 0
+17/06/09 20:10:53 INFO executor.Executor: Finished task 0.0 in stage 6.0 (TID 247). 2087 bytes result sent to driver
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 285
+17/06/09 20:10:53 INFO executor.Executor: Running task 0.0 in stage 7.0 (TID 285)
+17/06/09 20:10:53 INFO executor.Executor: Running task 2.0 in stage 7.0 (TID 312)
+17/06/09 20:10:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 318
+17/06/09 20:10:53 INFO storage.MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 5.6 KB, free 422.1 KB)
+17/06/09 20:10:53 INFO broadcast.TorrentBroadcast: Reading broadcast variable 16 took 13 ms
+17/06/09 20:10:53 INFO spark.CacheManager: Partition rdd_11_4 not found, computing it
+17/06/09 20:10:53 INFO storage.BlockManager: Found block rdd_2_3 locally
+17/06/09 20:10:54 INFO python.PythonRunner: Times: total = 38, boot = 17, init = 21, finish = 0
+17/06/09 20:10:54 INFO python.PythonRunner: Times: total = 40, boot = 19, init = 21, finish = 0
+17/06/09 20:10:54 INFO executor.Executor: Finished task 2.0 in stage 7.0 (TID 312). 2667 bytes result sent to driver
+17/06/09 20:10:54 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 321
+17/06/09 20:10:54 INFO executor.Executor: Running task 1.0 in stage 8.0 (TID 335)
+17/06/09 20:10:54 INFO storage.MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 5.7 KB, free 438.5 KB)
+17/06/09 20:10:54 INFO storage.BlockManager: Found block rdd_11_1 locally
+17/06/09 20:10:54 INFO storage.MemoryStore: Block broadcast_18 stored as values in memory (estimated size 9.6 KB, free 464.0 KB)
+17/06/09 20:10:54 INFO executor.Executor: Finished task 2.0 in stage 9.0 (TID 388). 2239 bytes result sent to driver
+17/06/09 20:10:54 INFO executor.Executor: Running task 1.0 in stage 10.0 (TID 416)
+17/06/09 20:10:54 INFO storage.MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 5.5 KB, free 416.7 KB)
+17/06/09 20:10:54 INFO spark.CacheManager: Partition rdd_16_4 not found, computing it
+17/06/09 20:10:54 INFO storage.BlockManager: Found block rdd_2_4 locally
+17/06/09 20:10:54 INFO python.PythonRunner: Times: total = 40, boot = 20, init = 20, finish = 0
+17/06/09 20:10:54 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 508
+17/06/09 20:10:54 INFO storage.BlockManager: Found block rdd_16_1 locally
+17/06/09 20:10:55 INFO executor.Executor: Finished task 4.0 in stage 12.0 (TID 519). 2155 bytes result sent to driver
+17/06/09 20:10:55 INFO storage.MemoryStore: Block broadcast_22 stored as values in memory (estimated size 9.6 KB, free 418.6 KB)
+17/06/09 20:10:55 INFO executor.Executor: Finished task 4.0 in stage 13.0 (TID 559). 2241 bytes result sent to driver
+17/06/09 20:10:55 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 576
+17/06/09 20:10:55 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 590
+17/06/09 20:10:55 INFO storage.BlockManager: Found block rdd_2_4 locally
+17/06/09 20:10:55 INFO python.PythonRunner: Times: total = 38, boot = -82, init = 120, finish = 0
+17/06/09 20:10:55 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 636
+17/06/09 20:10:55 INFO executor.Executor: Running task 3.0 in stage 15.0 (TID 638)
+17/06/09 20:10:55 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 639
+17/06/09 20:10:55 INFO spark.CacheManager: Partition rdd_21_2 not found, computing it
+17/06/09 20:10:55 INFO storage.BlockManager: Found block rdd_2_3 locally
+17/06/09 20:10:55 INFO executor.Executor: Finished task 1.0 in stage 15.0 (TID 626). 2667 bytes result sent to driver
+17/06/09 20:10:55 INFO executor.Executor: Running task 0.0 in stage 16.0 (TID 643)
+17/06/09 20:10:55 INFO storage.BlockManager: Found block rdd_21_0 locally
+17/06/09 20:10:55 INFO python.PythonRunner: Times: total = 41, boot = -104, init = 145, finish = 0
+17/06/09 20:10:55 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 706
+17/06/09 20:10:55 INFO storage.BlockManager: Found block rdd_2_1 locally
+17/06/09 20:10:55 INFO executor.Executor: Finished task 4.0 in stage 17.0 (TID 719). 2156 bytes result sent to driver
+17/06/09 20:10:55 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 722
+17/06/09 20:10:55 INFO executor.Executor: Running task 0.0 in stage 18.0 (TID 722)
+17/06/09 20:10:55 INFO executor.Executor: Running task 3.0 in stage 18.0 (TID 758)
+17/06/09 20:10:55 INFO storage.BlockManager: Found block rdd_2_3 locally
+17/06/09 20:10:56 INFO executor.Executor: Running task 0.0 in stage 19.0 (TID 762)
+17/06/09 20:10:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 776
+17/06/09 20:10:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 789
+17/06/09 20:10:56 INFO executor.Executor: Running task 2.0 in stage 19.0 (TID 789)
+17/06/09 20:10:56 INFO storage.BlockManager: Found block rdd_2_0 locally
+17/06/09 20:10:56 INFO storage.BlockManager: Found block rdd_2_1 locally
+17/06/09 20:10:56 INFO python.PythonRunner: Times: total = 41, boot = -82, init = 123, finish = 0
+17/06/09 20:10:56 INFO python.PythonRunner: Times: total = 41, boot = -67, init = 107, finish = 1
+17/06/09 20:10:56 INFO storage.MemoryStore: Block rdd_26_2 stored as bytes in memory (estimated size 16.0 B, free 419.7 KB)
+17/06/09 20:10:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 821
+17/06/09 20:10:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 839
+17/06/09 20:10:56 INFO storage.BlockManager: Found block rdd_26_4 locally
+17/06/09 20:10:56 INFO executor.Executor: Running task 0.0 in stage 21.0 (TID 853)
+17/06/09 20:10:56 INFO executor.Executor: Running task 2.0 in stage 21.0 (TID 877)
+17/06/09 20:10:56 INFO storage.BlockManager: Found block rdd_2_4 locally
+17/06/09 20:10:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 919
+17/06/09 20:10:56 INFO executor.Executor: Running task 4.0 in stage 22.0 (TID 919)
+17/06/09 20:10:56 INFO storage.MemoryStore: Block broadcast_31_piece0 stored as bytes in memory (estimated size 5.6 KB, free 395.3 KB)
+17/06/09 20:10:56 INFO broadcast.TorrentBroadcast: Reading broadcast variable 31 took 8 ms
+17/06/09 20:10:56 INFO python.PythonRunner: Times: total = 39, boot = -86, init = 125, finish = 0
+17/06/09 20:10:56 INFO executor.Executor: Finished task 1.0 in stage 22.0 (TID 900). 2667 bytes result sent to driver
+17/06/09 20:10:56 INFO executor.Executor: Finished task 2.0 in stage 22.0 (TID 912). 2667 bytes result sent to driver
+17/06/09 20:10:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 940
+17/06/09 20:10:56 INFO broadcast.TorrentBroadcast: Started reading broadcast variable 32
+17/06/09 20:10:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 958
+17/06/09 20:10:56 INFO storage.MemoryStore: Block broadcast_32_piece0 stored as bytes in memory (estimated size 5.7 KB, free 406.3 KB)
+17/06/09 20:10:56 INFO storage.BlockManager: Found block rdd_30_0 locally
+17/06/09 20:10:56 INFO python.PythonRunner: Times: total = 40, boot = -129, init = 168, finish = 1
+17/06/09 20:10:57 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1026
+17/06/09 20:10:57 INFO broadcast.TorrentBroadcast: Reading broadcast variable 33 took 9 ms
+17/06/09 20:10:57 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:57 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:57 INFO executor.Executor: Finished task 1.0 in stage 24.0 (TID 984). 2364 bytes result sent to driver
+17/06/09 20:10:57 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1127
+17/06/09 20:10:57 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:57 INFO python.PythonRunner: Times: total = 38, boot = -390, init = 428, finish = 0
+17/06/09 20:10:57 INFO mapred.SparkHadoopMapRedUtil: attempt_201706092018_0024_m_000043_1128: Committed
+17/06/09 20:10:57 INFO executor.Executor: Running task 82.0 in stage 24.0 (TID 1137)
+17/06/09 20:10:57 INFO python.PythonRunner: Times: total = 39, boot = -79, init = 118, finish = 0
+17/06/09 20:10:58 INFO output.FileOutputCommitter: Saved output of task 'attempt_201706092018_0024_m_000084_1141' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000084
+17/06/09 20:10:58 INFO mapred.SparkHadoopMapRedUtil: attempt_201706092018_0024_m_000084_1141: Committed
+17/06/09 20:10:58 INFO executor.Executor: Finished task 81.0 in stage 24.0 (TID 1136). 2364 bytes result sent to driver
+17/06/09 20:10:58 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1146
+17/06/09 20:10:58 INFO executor.Executor: Running task 121.0 in stage 24.0 (TID 1146)
+17/06/09 20:10:58 INFO executor.Executor: Running task 124.0 in stage 24.0 (TID 1151)
+17/06/09 20:10:58 INFO storage.BlockManager: Found block rdd_21_1 locally
+17/06/09 20:10:58 INFO storage.BlockManager: Found block rdd_21_2 locally
+17/06/09 20:10:58 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:58 INFO python.PythonRunner: Times: total = 40, boot = -82, init = 122, finish = 0
+17/06/09 20:10:58 INFO executor.Executor: Finished task 124.0 in stage 24.0 (TID 1151). 2364 bytes result sent to driver
+17/06/09 20:10:58 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:58 INFO storage.BlockManager: Found block rdd_26_2 locally
+17/06/09 20:10:58 INFO python.PythonRunner: Times: total = 38, boot = -62, init = 100, finish = 0
+17/06/09 20:10:58 INFO output.FileOutputCommitter: Saved output of task 'attempt_201706092018_0024_m_000163_1158' to hdfs://10.10.34.11:9000/pjhe/test/1/_temporary/0/task_201706092018_0024_m_000163
+17/06/09 20:10:58 INFO mapred.SparkHadoopMapRedUtil: attempt_201706092018_0024_m_000163_1158: Committed
+17/06/09 20:10:58 INFO executor.Executor: Finished task 163.0 in stage 24.0 (TID 1158). 2364 bytes result sent to driver
+17/06/09 20:10:58 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:58 INFO mapred.SparkHadoopMapRedUtil: attempt_201706092018_0024_m_000162_1157: Committed
+17/06/09 20:10:58 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1199
+17/06/09 20:10:58 INFO storage.BlockManager: Found block rdd_30_0 locally
+17/06/09 20:10:59 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:59 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:59 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/06/09 20:10:59 INFO executor.Executor: Finished task 1.0 in stage 25.0 (TID 1180). 2364 bytes result sent to driver
+17/06/09 20:11:07 INFO broadcast.TorrentBroadcast: Reading broadcast variable 37 took 14 ms
+17/06/09 20:11:07 INFO spark.CacheManager: Partition rdd_42_3 not found, computing it
+17/06/09 20:11:07 INFO rdd.HadoopRDD: Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:21876+7292
+17/06/09 20:11:07 INFO python.PythonRunner: Times: total = 55, boot = -8768, init = 8818, finish = 5
+17/06/09 20:11:07 INFO python.PythonRunner: Times: total = 42, boot = 23, init = 19, finish = 0
+17/06/09 20:11:07 INFO executor.Executor: Finished task 2.0 in stage 26.0 (TID 1202). 2703 bytes result sent to driver
+17/06/09 20:11:07 INFO executor.Executor: Finished task 1.0 in stage 26.0 (TID 1201). 2703 bytes result sent to driver
+17/06/09 20:11:07 INFO executor.Executor: Running task 9.0 in stage 26.0 (TID 1209)
+17/06/09 20:11:08 INFO storage.MemoryStore: Block rdd_42_5 stored as bytes in memory (estimated size 930.0 B, free 809.3 KB)
+17/06/09 20:11:08 INFO python.PythonRunner: Times: total = 45, boot = 19, init = 26, finish = 0
+17/06/09 20:11:08 INFO spark.CacheManager: Partition rdd_42_10 not found, computing it
+17/06/09 20:11:08 INFO python.PythonRunner: Times: total = 39, boot = 18, init = 21, finish = 0
+17/06/09 20:11:08 INFO executor.Executor: Finished task 9.0 in stage 26.0 (TID 1209). 2703 bytes result sent to driver
+17/06/09 20:11:08 INFO python.PythonRunner: Times: total = 42, boot = 22, init = 19, finish = 1
+17/06/09 20:11:08 INFO rdd.HadoopRDD: Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:80212+7292
+17/06/09 20:11:08 INFO rdd.HadoopRDD: Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:102088+7292
+17/06/09 20:11:08 INFO storage.MemoryStore: Block rdd_42_13 stored as bytes in memory (estimated size 912.0 B, free 814.9 KB)
+17/06/09 20:11:08 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1216
+17/06/09 20:11:08 INFO spark.CacheManager: Partition rdd_42_19 not found, computing it
+17/06/09 20:11:08 INFO rdd.HadoopRDD: Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:138548+7292
+17/06/09 20:11:08 INFO storage.MemoryStore: Block rdd_42_15 stored as bytes in memory (estimated size 913.0 B, free 817.5 KB)
+17/06/09 20:11:08 INFO executor.Executor: Running task 21.0 in stage 26.0 (TID 1221)
+17/06/09 20:11:08 INFO python.PythonRunner: Times: total = 38, boot = 20, init = 18, finish = 0
+17/06/09 20:11:08 INFO spark.CacheManager: Partition rdd_42_23 not found, computing it
+17/06/09 20:11:08 INFO storage.MemoryStore: Block rdd_42_24 stored as bytes in memory (estimated size 858.0 B, free 824.2 KB)
+17/06/09 20:11:08 INFO storage.MemoryStore: Block rdd_42_23 stored as bytes in memory (estimated size 914.0 B, free 825.1 KB)
+17/06/09 20:11:08 INFO rdd.HadoopRDD: Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:182300+7292
+17/06/09 20:11:08 INFO python.PythonRunner: Times: total = 39, boot = 23, init = 16, finish = 0
+17/06/09 20:11:08 INFO executor.Executor: Running task 27.0 in stage 26.0 (TID 1227)
+17/06/09 20:11:08 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1228
+17/06/09 20:11:08 INFO executor.Executor: Running task 28.0 in stage 26.0 (TID 1228)
+17/06/09 20:11:08 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1229
+17/06/09 20:11:08 INFO spark.CacheManager: Partition rdd_42_28 not found, computing it
+17/06/09 20:11:08 INFO python.PythonRunner: Times: total = 48, boot = 5, init = 38, finish = 5
+17/06/09 20:11:08 INFO spark.CacheManager: Partition rdd_42_30 not found, computing it
+17/06/09 20:11:08 INFO executor.Executor: Finished task 27.0 in stage 26.0 (TID 1227). 2701 bytes result sent to driver
+17/06/09 20:11:08 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1232
+17/06/09 20:11:08 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1234
+17/06/09 20:11:08 INFO rdd.HadoopRDD: Input split: hdfs://10.10.34.11:9000/pjhe/logs/2kSOSP.log:247928+7292
+17/06/09 20:11:08 INFO storage.MemoryStore: Block rdd_42_32 stored as bytes in memory (estimated size 993.0 B, free 832.1 KB)
+17/06/09 20:11:08 INFO python.PythonRunner: Times: total = 50, boot = 6, init = 39, finish = 5
+17/06/09 20:11:08 INFO executor.Executor: Finished task 33.0 in stage 26.0 (TID 1233). 2703 bytes result sent to driver
+17/06/09 20:11:08 INFO executor.Executor: Running task 38.0 in stage 26.0 (TID 1238)
+17/06/09 20:11:08 INFO python.PythonRunner: Times: total = 47, boot = 17, init = 23, finish = 7
+17/06/09 20:11:08 INFO spark.CacheManager: Partition rdd_42_39 not found, computing it
+17/06/09 20:11:08 INFO executor.Executor: Finished task 38.0 in stage 26.0 (TID 1238). 2703 bytes result sent to driver
+17/06/09 20:11:08 INFO storage.MemoryStore: Block broadcast_38 stored as values in memory (estimated size 9.6 KB, free 853.7 KB)
+17/06/09 20:11:08 INFO storage.BlockManager: Found block rdd_42_0 locally
+17/06/09 20:11:09 INFO executor.Executor: Running task 8.0 in stage 27.0 (TID 1248)
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1252
+17/06/09 20:11:09 INFO executor.Executor: Running task 12.0 in stage 27.0 (TID 1252)
+17/06/09 20:11:09 INFO executor.Executor: Running task 13.0 in stage 27.0 (TID 1253)
+17/06/09 20:11:09 INFO storage.BlockManager: Found block rdd_42_12 locally
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1255
+17/06/09 20:11:09 INFO executor.Executor: Running task 18.0 in stage 27.0 (TID 1258)
+17/06/09 20:11:09 INFO storage.BlockManager: Found block rdd_42_16 locally
+17/06/09 20:11:09 INFO executor.Executor: Finished task 15.0 in stage 27.0 (TID 1255). 2523 bytes result sent to driver
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1260
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1261
+17/06/09 20:11:09 INFO executor.Executor: Finished task 18.0 in stage 27.0 (TID 1258). 2349 bytes result sent to driver
+17/06/09 20:11:09 INFO storage.BlockManager: Found block rdd_42_21 locally
+17/06/09 20:11:09 INFO python.PythonRunner: Times: total = 40, boot = 17, init = 22, finish = 1
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1265
+17/06/09 20:11:09 INFO executor.Executor: Finished task 24.0 in stage 27.0 (TID 1264). 2592 bytes result sent to driver
+17/06/09 20:11:09 INFO executor.Executor: Finished task 23.0 in stage 27.0 (TID 1263). 2385 bytes result sent to driver
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1269
+17/06/09 20:11:09 INFO storage.BlockManager: Found block rdd_42_29 locally
+17/06/09 20:11:09 INFO executor.Executor: Finished task 26.0 in stage 27.0 (TID 1266). 2267 bytes result sent to driver
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1272
+17/06/09 20:11:09 INFO executor.Executor: Running task 32.0 in stage 27.0 (TID 1272)
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1273
+17/06/09 20:11:09 INFO executor.Executor: Running task 33.0 in stage 27.0 (TID 1273)
+17/06/09 20:11:09 INFO storage.BlockManager: Found block rdd_42_33 locally
+17/06/09 20:11:09 INFO python.PythonRunner: Times: total = 108, boot = 28, init = 79, finish = 1
+17/06/09 20:11:09 INFO executor.Executor: Finished task 29.0 in stage 27.0 (TID 1269). 2349 bytes result sent to driver
+17/06/09 20:11:09 INFO executor.Executor: Running task 34.0 in stage 27.0 (TID 1274)
+17/06/09 20:11:09 INFO executor.Executor: Finished task 32.0 in stage 27.0 (TID 1272). 2801 bytes result sent to driver
+17/06/09 20:11:09 INFO executor.Executor: Finished task 33.0 in stage 27.0 (TID 1273). 2592 bytes result sent to driver
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1276
+17/06/09 20:11:09 INFO executor.Executor: Running task 36.0 in stage 27.0 (TID 1276)
+17/06/09 20:11:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1277
+17/06/09 20:11:09 INFO storage.BlockManager: Found block rdd_42_37 locally
+17/06/09 20:11:09 INFO python.PythonRunner: Times: total = 40, boot = 20, init = 19, finish = 1
+17/06/09 20:11:10 INFO broadcast.TorrentBroadcast: Reading broadcast variable 39 took 716 ms
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_1 locally
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_3 locally
+17/06/09 20:11:10 INFO executor.Executor: Running task 6.0 in stage 28.0 (TID 1286)
+17/06/09 20:11:10 INFO executor.Executor: Running task 7.0 in stage 28.0 (TID 1287)
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_6 locally
+17/06/09 20:11:10 INFO executor.Executor: Finished task 5.0 in stage 28.0 (TID 1285). 2087 bytes result sent to driver
+17/06/09 20:11:10 INFO python.PythonRunner: Times: total = 42, boot = 13, init = 29, finish = 0
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_10 locally
+17/06/09 20:11:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1293
+17/06/09 20:11:10 INFO executor.Executor: Running task 13.0 in stage 28.0 (TID 1293)
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_13 locally
+17/06/09 20:11:10 INFO python.PythonRunner: Times: total = 41, boot = 17, init = 24, finish = 0
+17/06/09 20:11:10 INFO executor.Executor: Running task 15.0 in stage 28.0 (TID 1295)
+17/06/09 20:11:10 INFO executor.Executor: Finished task 11.0 in stage 28.0 (TID 1291). 2087 bytes result sent to driver
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_15 locally
+17/06/09 20:11:10 INFO executor.Executor: Finished task 13.0 in stage 28.0 (TID 1293). 2087 bytes result sent to driver
+17/06/09 20:11:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1298
+17/06/09 20:11:10 INFO executor.Executor: Running task 21.0 in stage 28.0 (TID 1301)
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_26 locally
+17/06/09 20:11:10 INFO executor.Executor: Running task 29.0 in stage 28.0 (TID 1309)
+17/06/09 20:11:10 INFO executor.Executor: Running task 30.0 in stage 28.0 (TID 1310)
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_31 locally
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_32 locally
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_34 locally
+17/06/09 20:11:10 INFO python.PythonRunner: Times: total = 40, boot = 18, init = 22, finish = 0
+17/06/09 20:11:10 INFO python.PythonRunner: Times: total = 41, boot = 19, init = 22, finish = 0
+17/06/09 20:11:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1316
+17/06/09 20:11:10 INFO python.PythonRunner: Times: total = 40, boot = 14, init = 25, finish = 1
+17/06/09 20:11:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1318
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_37 locally
+17/06/09 20:11:10 INFO executor.Executor: Finished task 35.0 in stage 28.0 (TID 1315). 2087 bytes result sent to driver
+17/06/09 20:11:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1320
+17/06/09 20:11:10 INFO executor.Executor: Running task 2.0 in stage 29.0 (TID 1322)
+17/06/09 20:11:10 INFO storage.MemoryStore: Block broadcast_40 stored as values in memory (estimated size 9.9 KB, free 884.2 KB)
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_0 locally
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_1 locally
+17/06/09 20:11:10 INFO python.PythonRunner: Times: total = 41, boot = -85, init = 125, finish = 1
+17/06/09 20:11:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1328
+17/06/09 20:11:10 INFO executor.Executor: Running task 9.0 in stage 29.0 (TID 1329)
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_5 locally
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_6 locally
+17/06/09 20:11:10 INFO executor.Executor: Finished task 7.0 in stage 29.0 (TID 1327). 2171 bytes result sent to driver
+17/06/09 20:11:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1330
+17/06/09 20:11:10 INFO executor.Executor: Running task 11.0 in stage 29.0 (TID 1331)
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_10 locally
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_14 locally
+17/06/09 20:11:10 INFO storage.BlockManager: Found block rdd_42_16 locally
+17/06/09 20:11:11 INFO python.PythonRunner: Times: total = 40, boot = 20, init = 19, finish = 1
+17/06/09 20:11:11 INFO python.PythonRunner: Times: total = 39, boot = 18, init = 20, finish = 1
+17/06/09 20:11:11 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1341
+17/06/09 20:11:11 INFO storage.BlockManager: Found block rdd_42_24 locally
+17/06/09 20:11:11 INFO executor.Executor: Finished task 21.0 in stage 29.0 (TID 1341). 2128 bytes result sent to driver
+17/06/09 20:11:11 INFO python.PythonRunner: Times: total = 43, boot = 15, init = 27, finish = 1
+17/06/09 20:11:11 INFO executor.Executor: Running task 29.0 in stage 29.0 (TID 1349)
+17/06/09 20:11:11 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1351
+17/06/09 20:11:11 INFO executor.Executor: Running task 33.0 in stage 29.0 (TID 1353)
+17/06/09 20:11:11 INFO storage.BlockManager: Found block rdd_42_30 locally

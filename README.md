@@ -13,14 +13,19 @@ formats it hasn't seen. It runs against a local **Gemma** model via Ollama and d
 ## Layout
 
 ```
-pipeline.py        Reference two-stage triage tool (profile -> triage)
-data/              Log datasets to triage (Linux, HDFS, samples; add more from loghub)
-evaluation/        Approach-agnostic scoring harness for any triage approach
-  ├─ eval.py         Scores an output JSON against the rubric
-  ├─ signatures.py   Per-dataset ground-truth (extensible)
-  ├─ EVALUATION.md   The rubric + expectations + results
-  └─ README.md       How collaborators score their own approach
-HANDOFF.md         Original project handoff notes
+pipeline.py          Reference two-stage triage tool (profile -> triage)
+data/
+  ├─ loghub/         All 16 loghub 2k datasets (Android … Zookeeper)
+  ├─ samples/        300-line eval samples (one per dataset; reproducible)
+  └─ Linux.log …     Full Linux dataset + extras
+evaluation/          Approach-agnostic scoring harness + benchmark driver
+  ├─ eval.py           Scores one output JSON against the rubric
+  ├─ run_all.py        Runs an approach over all datasets -> aggregate scorecard
+  ├─ make_samples.py   Regenerates data/samples/ from data/loghub/
+  ├─ signatures.py     Per-dataset ground truth (level-based + keyword)
+  ├─ EVALUATION.md     Rubric + expectations + results
+  └─ README.md         Contract, scoring, and benchmark instructions
+HANDOFF.md           Original project handoff notes
 ```
 
 ## Prerequisites
@@ -40,6 +45,22 @@ python evaluation/eval.py data/HDFS_2k.log out.json hdfs
 
 Useful flags: `--model <name>` (e.g. `gemma2:9b` for speed), `--no-profile` (skip Stage 1),
 `--filter` (keyword pre-filter), `--chunk-size N`.
+
+## Benchmark across all 16 loghub datasets
+
+One command runs the pipeline over every dataset in `data/samples/` and prints an
+aggregate scorecard (hard checks, recall, benign leakage per dataset):
+
+```bash
+python evaluation/run_all.py --model gemma4:12b        # full-quality pass
+python evaluation/run_all.py --model gemma2:9b         # faster pass
+python evaluation/run_all.py --only hdfs,linux         # a subset
+```
+
+Outputs go to `outputs/` (gitignored). To run two models **in parallel** and compare,
+each teammate runs `run_all.py` with a different `--model` and diffs the scorecards.
+Full instructions, the output contract, and how to add datasets:
+[evaluation/README.md](evaluation/README.md).
 
 ## How it works
 

@@ -1,0 +1,300 @@
+03-17 16:13:38.820  1702  8671 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x23,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:13:38.994  1702 27365 I WindowManager: Destroying surface Surface(name=SurfaceView - com.tencent.qt.qtl/com.tencent.video.player.activity.PlayerActivity) called by com.android.server.wm.WindowStateAnimator.destroyDeferredSurfaceLocked:942 com.android.server.wm.WindowManagerService.performDeferredDestroyWindow:3407 com.android.server.wm.Session.performDeferredDestroy:225 android.view.IWindowSession$Stub.onTransact:398 com.android.server.wm.Session.onTransact:136 android.os.Binder.execTransact:565 <bottom of call stack> <bottom of call stack> 
+03-17 16:13:39.010  1702  2639 D PowerManagerService: release:lock=62617001, flg=0x0, tag="WindowManager", name=android", ws=WorkSource{10113}, uid=1000, pid=1702
+03-17 16:13:39.011  1702  2639 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261843648, event=0, flags=0x1, uid=1000
+03-17 16:13:39.079  1702  1815 D WindowManager: startAnimation end
+03-17 16:13:40.150  1702  2556 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:13:40.241  2626  8682 W PhoneInterfaceManager: shouldBlockLocation running ...
+03-17 16:13:40.319  1702 17630 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:13:41.481  1702 27357 D PowerManagerService: Releasing suspend blocker "PowerManagerService.WakeLocks".
+03-17 16:13:45.316  1702 14640 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002 down true canceled false
+03-17 16:13:45.361  1702  3137 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002 down false canceled false
+03-17 16:13:45.362  1702  3137 D WindowManager: interceptKeyBeforeQueueing: key 4 , result : 1
+03-17 16:13:45.382  1702  3697 D PowerManagerService: acquire lock=189667585, flags=0x1, tag="*launch*", name=android, ws=WorkSource{10113}, uid=1000, pid=1702
+03-17 16:13:45.598  1702  2556 D PowerManagerService: release:lock=189667585, flg=0x0, tag="*launch*", name=android", ws=WorkSource{10113}, uid=1000, pid=1702
+03-17 16:13:46.240  2227  2227 I PhoneStatusBar: notifyUiVisibilityChanged:vis=0x40000600, SystemUiVisibility=0x40000600
+03-17 16:13:46.290  2227  2227 I StackScrollAlgorithm: overlapAmount:146.0, previousNotificationEnd:0.0, newYTranslation:-146.0, location:4, i:0, getTopPadding:333.0, getLocationOnScreen():-479
+03-17 16:13:46.290  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:true, getTopPadding=333.0, Translation=-479.0
+03-17 16:13:46.291  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:true
+03-17 16:13:46.339  2227  2227 I StackScrollAlgorithm: state.clipTopAmount:30, i:0
+03-17 16:13:46.339  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:true
+03-17 16:13:46.352  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:true, getTopPadding=333.0, Translation=-338.0
+03-17 16:13:46.370  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:13:46.417  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:13:46.451  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:13:46.586  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=-11.0
+03-17 16:13:46.602  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:13:46.619  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=-2.0
+03-17 16:13:46.652  2227  2227 I PanelView: onExpandingFinished
+03-17 16:13:46.654  1702 10454 W ActivityManager: Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui
+03-17 16:13:46.765  2227  2794 W KeyguardUpdateMonitor: registerCallback not in UI.
+03-17 16:13:46.778  2626  2839 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 retVal=true
+03-17 16:13:47.012  1702  2105 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261851646, event=2, flags=0x0, uid=1000
+03-17 16:13:47.124  2227  2227 I PhoneStatusBar: notifyUiVisibilityChanged:vis=0x40000500, SystemUiVisibility=0x40000500
+03-17 16:13:47.254  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=-6.0
+03-17 16:13:47.254  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:13:47.270  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:13:47.287  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=-43.0
+03-17 16:13:47.320  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=-102.0
+03-17 16:13:47.371  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=-222.0
+03-17 16:13:47.371  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:13:47.396  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=-270.0
+03-17 16:13:47.441  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:true, getTopPadding=333.0, Translation=-428.0
+03-17 16:13:47.498  2227  2227 I PhoneStatusBar: removeNotificationChildren
+03-17 16:13:47.499  1702  2555 W ActivityManager: Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui
+03-17 16:13:47.517  1702  8671 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { flg=0x18800000 cmp=com.tencent.mm/.plugin.base.stub.WXEntryActivity (has extras) }
+03-17 16:13:47.547  1702  3694 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.incallui/.InCallActivity (has extras) }
+03-17 16:13:47.547  1702  3694 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { flg=0x18800000 cmp=com.tencent.mm/.plugin.base.stub.WXEntryActivity (has extras) }
+03-17 16:13:47.585  1702  1702 I NotificationManager: cancelNotification,index:-1
+03-17 16:13:47.600  2227  2227 I PanelView: closeQs
+03-17 16:13:47.638  1702  2618 W ActivityManager: getRunningAppProcesses: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:13:47.694  1702 17632 I NotificationManager: cancelNotificationWithTag pid 28601,uid = 10111,tag = null,pkg =com.tencent.mobileqq,id =144
+03-17 16:13:47.810  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:13:47.931  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:13:48.553  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:13:54.735  1702  2106 D PowerManagerService: acquire lock=237091223, flags=0x1, tag="WiredAccessoryManager", name=android, ws=null, uid=1000, pid=1702
+03-17 16:13:54.746  1702  1702 D PowerManagerService: release:lock=237091223, flg=0x0, tag="WiredAccessoryManager", name=android", ws=null, uid=1000, pid=1702
+03-17 16:13:54.754 23650 23689 V AudioManager: isMusicActive...
+03-17 16:13:55.173  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:13:55.791  1702  2153 D PowerManagerService: release:lock=86152250, flg=0x0, tag="handleAudioEvent", name=android", ws=null, uid=1000, pid=1702
+03-17 16:13:55.793  1702  2153 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:13:55.804 23650 23689 V AudioManager: isMusicActive...
+03-17 16:13:55.821  2227  2514 V AudioManager: getLastAudibleStreamVolume  treamType: 0
+03-17 16:13:55.867  1702  3693 W ActivityManager: getRunningAppProcesses: caller 10091 does not hold REAL_GET_TASKS; limiting output
+03-17 16:13:55.894  1702  2639 W ActivityManager: getRunningAppProcesses: caller 10091 does not hold REAL_GET_TASKS; limiting output
+03-17 16:13:55.937  1702  1737 I ActivityManager: cleanUpApplicationRecordLocked, pid: 12025, restart: false
+03-17 16:13:55.940  1702  2639 I DisplayManagerService: stopWifiDisplayScanLocked record.mWifiDisplayScanRequested=false
+03-17 16:13:58.797  1702  8303 D PowerManagerService: Releasing suspend blocker "PowerManagerService.WakeLocks".
+03-17 16:14:00.039  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:14:01.964  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:01.964  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:02.045  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:02.045  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:02.057  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:02.765  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:02.834  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:03.133  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:03.219  1702  2105 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261867854, event=2, flags=0x0, uid=1000
+03-17 16:14:03.281  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:04.307 28601 28601 V AudioManager: querySoundEffectsEnabled...
+03-17 16:14:04.932  1702 27357 W ActivityManager: getTasks: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:14:04.943  1702 17622 W ActivityManager: getTasks: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:14:04.947  1702  3137 W ActivityManager: getTasks: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:14:05.957  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:06.043  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:06.044  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:06.311  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:14:07.697  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:07.748  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:07.765  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:14:08.183  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:14:08.209  2626  2838 W PhoneInterfaceManager: shouldBlockLocation running ...
+03-17 16:14:08.245  2626  2839 I PhoneInterfaceManager: shouldBlockLocation  ret:false
+03-17 16:14:08.299  1702  2639 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:14:08.300  1702 17632 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:14:09.582  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:09.818  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:09.960  1702 27357 W ActivityManager: getTasks: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:14:10.873  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:12.930  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:14:15.087  1702  2555 I WindowManager: Destroying surface Surface(name=PopupWindow:9b04807) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.removeLocked:1554 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2739 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2702 com.android.server.wm.WindowManagerService.removeWindowLocked:2691 com.android.server.wm.WindowManagerService.removeWindowLocked:2560 com.android.server.wm.WindowManagerService.removeWindow:2555 
+03-17 16:14:15.942  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:14:16.223  1702  2105 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261880856, event=2, flags=0x0, uid=1000
+03-17 16:14:16.332  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:16.819  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:19.311  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:19.898  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:20.530  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:20.666  1702  2105 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261885300, event=2, flags=0x0, uid=1000
+03-17 16:14:20.667  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:14:22.534  1702 14638 I WindowManager: Destroying surface Surface(name=PopupWindow:317e46) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.removeLocked:1554 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2739 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2702 com.android.server.wm.WindowManagerService.removeWindowLocked:2691 com.android.server.wm.WindowManagerService.removeWindowLocked:2560 com.android.server.wm.WindowManagerService.removeWindow:2555 
+03-17 16:14:22.633  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:14:27.162  1702  3693 I ActivityManager: cleanUpApplicationRecordLocked, pid: 5784, restart: false
+03-17 16:14:27.181  1702  3694 I DisplayManagerService: stopWifiDisplayScanLocked record.mWifiDisplayScanRequested=false
+03-17 16:14:29.484  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:14:36.708  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:14:42.814  1702  8303 W ActivityManager: getRunningAppProcesses: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:14:53.261  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:15:00.006  1702  1702 I AlarmManager: scheduleTimeTickEvent triggerAtTime = 509262332
+03-17 16:15:00.050  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=0.0
+03-17 16:15:00.967  1702  3137 I AlarmManager: remove(PendingIntent{e4e2534: PendingIntentRecord{e204f60 com.android.phone broadcastIntent}}) changed bounds; rebatching
+03-17 16:15:01.142  1702 17632 D PowerManagerService: release:lock=134680583, flg=0x0, tag="RILJ_ACK_WL", name=com.android.phone", ws=null, uid=1001, pid=2626
+03-17 16:15:01.994  2626 22775 I PhoneInterfaceManager: shouldBlockLocation  ret:false
+03-17 16:15:02.022  3664  3807 D TelephonyManager: getNeighboringCellInfo calling app is com.amap.android.ams
+03-17 16:15:02.064  1702 17622 D PowerManagerService: Releasing suspend blocker "PowerManagerService.WakeLocks".
+03-17 16:15:02.065  1702  3137 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:02.087  2626  2642 I PhoneInterfaceManager: shouldBlockLocation  ret:false
+03-17 16:15:05.340  1702  1737 D PowerManagerService: Acquiring suspend blocker "PowerManagerService.WakeLocks".
+03-17 16:15:05.482  1702 17630 D PowerManagerService: acquire lock=120758482, flags=0x1, tag="RILJ_ACK_WL", name=com.android.phone, ws=null, uid=1001, pid=2626
+03-17 16:15:06.045  1702  2250 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:06.225  1702  2644 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:06.807  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:15:07.846  1702  8671 D PowerManagerService: acquire lock=120758482, flags=0x1, tag="RILJ_ACK_WL", name=com.android.phone, ws=null, uid=1001, pid=2626
+03-17 16:15:07.847  1702  8671 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:07.969  2626  2838 W PhoneInterfaceManager: shouldBlockLocation running ...
+03-17 16:15:07.969  2626  2838 I PhoneInterfaceManager: shouldBlockLocation  ret:false
+03-17 16:15:08.056  1702  3694 D PowerManagerService: Releasing suspend blocker "PowerManagerService.WakeLocks".
+03-17 16:15:11.325  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:15:15.843  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:15:18.859 28601 12278 I MediaPlayer: [HSM] stayAwake false uid: 10111, pid: 28601
+03-17 16:15:19.992  1702  2644 I ActivityManager: Process com.tencent.mobileqq:qzone (pid 12236) has died
+03-17 16:15:19.993  1702  2644 W ActivityManager: Scheduling restart of crashed service com.tencent.mobileqq/cooperation.qzone.remote.logic.QzoneWebPluginProxyService in 1000ms
+03-17 16:15:21.264  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:15:21.566  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:15:22.136  1702  3693 W ActivityManager: getRunningAppProcesses: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:15:22.149  1702  1736 W ActivityManager: getRunningAppProcesses: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:15:22.517  1702 17630 W ActivityManager: getRunningAppProcesses: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:15:25.262  2227  2227 I PhoneStatusBar: resumeSuspendedAutohide
+03-17 16:15:25.265  1702  2107 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002 down false canceled false
+03-17 16:15:25.331  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:15:25.531  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:15:26.148  1702  2105 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261950783, event=2, flags=0x0, uid=1000
+03-17 16:15:26.153  1702 27353 D WindowManager: interceptKeyBeforeQueueing: key 3 , result : 1
+03-17 16:15:26.277  2227  2227 I PanelView: closeQs
+03-17 16:15:26.278  2227  2227 I PanelView: cancelPeek: false
+03-17 16:15:26.299  1702  2105 D PowerManagerService: acquire lock=189667585, flags=0x1, tag="*launch*", name=android, ws=WorkSource{10057}, uid=1000, pid=1702
+03-17 16:15:26.299  1702  2105 D PowerManagerService: Acquiring suspend blocker "PowerManagerService.WakeLocks".
+03-17 16:15:26.328  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:15:26.375  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:15:26.375  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:15:26.467  2227  2227 I PhoneStatusBar: cancelAutohide
+03-17 16:15:26.475  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:15:26.577  2227  2227 I PhoneStatusBar: cancelAutohide
+03-17 16:15:26.618  1702 17630 D PowerManagerService: release:lock=189667585, flg=0x0, tag="*launch*", name=android", ws=WorkSource{10057}, uid=1000, pid=1702
+03-17 16:15:27.025  1702  1737 W ActivityManager: getRunningAppProcesses: caller 10027 does not hold REAL_GET_TASKS; limiting output
+03-17 16:15:27.175  2626  2809 I PhoneInterfaceManager: shouldBlockLocation  ret:false
+03-17 16:15:27.179  1702  3137 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:27.237  2626  2838 I PhoneInterfaceManager: shouldBlockLocation  ret:false
+03-17 16:15:27.283  2626  8682 W PhoneInterfaceManager: shouldBlockLocation running ...
+03-17 16:15:27.284  2626  8682 I PhoneInterfaceManager: shouldBlockLocation  ret:false
+03-17 16:15:27.830  1702 27365 I ActivityManager: cleanUpApplicationRecordLocked, reset pid: 13094, euid: 0
+03-17 16:15:28.790  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:15:29.392  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:15:29.392  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:15:29.995  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:15:31.202  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:15:31.202  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:15:33.427  1702  1702 I NotificationManager: updateLightsLocked,turn off notificationLight
+03-17 16:15:33.438  2227  2227 I PhoneStatusBar: addNotification key=0|com.tencent.mobileqq|121|null|10111
+03-17 16:15:33.527  2227  2227 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock navigationbar search quick_settings >
+03-17 16:15:33.530  2227  2227 I PhoneStatusBar: removeNotificationChildren
+03-17 16:15:33.530  1702  2113 I NotificationManager: Marking notification as seen 0|com.tencent.mobileqq|121|null|10111
+03-17 16:15:34.298  1702 14640 I NotificationManager: onNotificationVisibilityChanged called
+03-17 16:15:35.413  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:15:35.414  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:15:37.011  1702  8303 I WindowManager: Application requested orientation -1, got rotation 0 which has compatible metrics
+03-17 16:15:37.079  2227  2227 I PhoneStatusBar: cancelAutohide
+03-17 16:15:37.153  1702  2639 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[264,444][920,908] }
+03-17 16:15:37.191  1702  8289 D PowerManagerService: Releasing suspend blocker "PowerManagerService.WakeLocks".
+03-17 16:15:39.249  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:true
+03-17 16:15:39.547  2227  2227 I PanelView: mHeadsUpExistenceChangedRunnable
+03-17 16:15:39.598  2227  2227 I PanelView: cancelPeek: false
+03-17 16:15:39.599  2227  2318 I PhoneStatusBar: logNotificationVisibilityChanges runInThread start
+03-17 16:15:43.694  1702  2105 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261968328, event=2, flags=0x0, uid=1000
+03-17 16:15:44.811  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:46.546  1702  2113 I WindowManager: Destroying surface Surface(name=PopupWindow:317e46) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.removeLocked:1554 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2739 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2702 com.android.server.wm.WindowManagerService.removeWindowLocked:2691 com.android.server.wm.WindowManagerService.removeWindowLocked:2560 com.android.server.wm.WindowManagerService.removeWindow:2555 
+03-17 16:15:46.914  1702  1815 I WindowManager: Destroying surface Surface(name=InputMethod) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.destroyOrSaveSurface:2201 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementInner:517 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:291 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:233 com.android.server.wm.WindowManagerService$H.handleMessage:8670 android.os.Handler.dispatchMessage:105 
+03-17 16:15:47.518  1702  2105 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261972153, event=2, flags=0x0, uid=1000
+03-17 16:15:47.589  1702  3697 D WindowManager: interceptKeyBeforeQueueing: key 3 , result : 1
+03-17 16:15:47.625  2227  2227 I PanelView: closeQs
+03-17 16:15:47.778  1702  8289 I WindowManager: Taking screenshot from Surface with crop:[Rect(0, 48 - 720, 1208)], width:[432], height:[696], minLayer:[21080], maxLayer:[21085], inRotation:[false], rot:[0]
+03-17 16:15:47.945  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:15:47.974  1702 17630 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { act=android.intent.action.VIEW dat=file:///storage/emulated/0/Tencent/QQfile_recv/b.apk typ=application/vnd.android.package-archive flg=0x10800000 cmp=com.android.packageinstaller/.PackageInstallerActivity (has extras) }
+03-17 16:15:47.974  1702 17630 D ActivityManager: getRecentTasks: num=20,flags=62,totalTasks=46
+03-17 16:15:47.988  1702  2558 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[264,444][920,908] }
+03-17 16:15:47.988  1702  2558 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { flg=0x18800000 cmp=com.tencent.mm/.plugin.base.stub.WXEntryActivity (has extras) }
+03-17 16:15:48.106  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=c0000700 mask=ffffffff oldVal=708 newVal=c0000700 diff=c0000008 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 720, 1280), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:15:48.107  2227  2227 I PhoneStatusBar: cancelAutohide
+03-17 16:15:48.659  1702  3694 D WindowManager: interceptKeyTq keycode=3 interactive=true keyguardActive=false policyFlags=2b000002 down true canceled false
+03-17 16:15:48.719  2227  2227 I PanelView: cancelPeek: false
+03-17 16:15:49.205  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:49.206  3714  3714 V AudioManager: querySoundEffectsEnabled...
+03-17 16:15:49.436  1702  3694 I WindowManager: The change in focus caused us to need to do a layout end
+03-17 16:15:49.462  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=80000508 mask=ffffffff oldVal=c0000700 newVal=80000508 diff=40000208 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 720, 1280), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:15:49.472  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:15:49.498  1702  2633 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { act=android.intent.action.VIEW dat=file:///storage/emulated/0/Tencent/QQfile_recv/b.apk typ=application/vnd.android.package-archive flg=0x10800000 cmp=com.android.packageinstaller/.PackageInstallerActivity (has extras) }
+03-17 16:15:49.528  1702  1702 I NotificationManager: cancelNotificationLocked,remove =com.tencent.mobileqq
+03-17 16:15:49.529  1702  1702 I NotificationManager: updateLightsLocked,turn off notificationLight
+03-17 16:15:49.563  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:15:49.568  2227  2227 I PhoneStatusBar: removeNotificationChildren
+03-17 16:15:49.568  2227  2227 I PhoneStatusBar: animateCollapsePanels:flags=0, force=false, delayed=false, mExpandedVisible=false
+03-17 16:15:49.573  2227  2227 I PanelView: instantCollapse
+03-17 16:15:49.720  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:15:51.659  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:15:51.708  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:15:51.709  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:15:51.878  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:15:53.718  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:54.640  1702 17622 W ActivityManager: getRunningAppProcesses: caller 10113 does not hold REAL_GET_TASKS; limiting output
+03-17 16:15:54.721  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:55.047  1702  3697 W ActivityManager: getTasks: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:15:55.823 23650 23689 V AudioManager: isMusicActive...
+03-17 16:15:55.992  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:15:56.291  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:56.372  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:15:56.791  1702  2105 D PowerManagerService: userActivityNoUpdateLocked: eventTime=261981426, event=2, flags=0x0, uid=1000
+03-17 16:15:57.746  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:15:57.980  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:15:58.224  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:15:58.475  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:15:58.583  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:15:58.883  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:15:58.884  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:15:59.172  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:15:59.790  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:16:00.005  1702  1702 V AlarmManager: Received TIME_TICK alarm; rescheduling
+03-17 16:16:00.005  1702  1702 I AlarmManager: scheduleTimeTickEvent triggerAtTime = 509322332
+03-17 16:16:00.058  2227  2227 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-17 16:16:00.090  1702  1820 I DisplayPowerController: HBM brightnessOut =38
+03-17 16:16:00.091  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:16:00.233 28601 28601 V AudioManager: playSoundEffect   effectType: 0
+03-17 16:16:00.345  1702  1737 D PowerManagerService: acquire lock=149977903, flags=0x1, tag="AudioMix", name=audioserver, ws=null, uid=1041, pid=0
+03-17 16:16:00.367  1702  1737 D PowerManagerService: acquire lock=173466309, flags=0x1, tag="AudioMix", name=audioserver, ws=null, uid=1041, pid=0
+03-17 16:16:00.392  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200
+03-17 16:16:00.429  1702  1702 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x1,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:16:00.505  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:16:00.514  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:16:00.550  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:16:00.550  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:16:00.693  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:16:01.098  1702  2633 I WindowManager: Destroying surface Surface(name=PopupWindow:317e46) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.removeLocked:1554 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2739 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2702 com.android.server.wm.WindowManagerService.removeWindowLocked:2691 com.android.server.wm.WindowManagerService.removeWindowLocked:2560 com.android.server.wm.WindowManagerService.removeWindow:2555 
+03-17 16:16:01.106  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:16:01.319  1702  1815 I WindowManager: Destroying surface Surface(name=InputMethod) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.destroyOrSaveSurface:2201 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementInner:517 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:291 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:233 com.android.server.wm.WindowManagerService$H.handleMessage:8670 android.os.Handler.dispatchMessage:105 
+03-17 16:16:02.802  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:16:02.897  2227  2227 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-17 16:16:02.899  1702  2121 D WifiController: DefaultState what=155652
+03-17 16:16:03.002  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:16:03.104  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:16:03.351  1702  8303 D PowerManagerService: release:lock=149977903, flg=0x0, tag="AudioMix", name=audioserver", ws=null, uid=1041, pid=0
+03-17 16:16:04.165  1702 10454 D WindowManager: interceptKeyBeforeQueueing: key 3 , result : 1
+03-17 16:16:04.186  1702  2105 D PowerManagerService: ready=true,policy=3,wakefulness=1,wksummary=0x0,uasummary=0x1,bootcompleted=true,boostinprogress=false,waitmodeenable=false,mode=false,manual=38,auto=-1,adj=0.0userId=0
+03-17 16:16:04.205  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:16:04.223  2227  2227 V PhoneStatusBar: setLightsOn(true)
+03-17 16:16:04.224  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:16:04.243  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=0 mask=1 oldVal=40000500 newVal=40000500 diff=0 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 0, 0), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:16:04.408  2227  2227 I PhoneStatusBar: setSystemUiVisibility vis=708 mask=ffffffff oldVal=40000500 newVal=708 diff=40000208 fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - 720, 1280), dockedStackBounds=Rect(0, 0 - 0, 0)
+03-17 16:16:04.459  1702  2633 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[264,444][920,908] }
+03-17 16:16:04.460  1702  2633 D ActivityManager: getRecentTasks: topActivity=ComponentInfo{com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity}
+03-17 16:16:04.476  1702  3694 D ActivityManager: getRecentTasks: num=10,flags=62,totalTasks=46
+03-17 16:16:04.597  1702  2633 D PowerManagerService: release:lock=189667585, flg=0x0, tag="*launch*", name=android", ws=WorkSource{10057}, uid=1000, pid=1702
+03-17 16:16:04.609  1702  1702 I NotificationManager: updateLightsLocked,turn off notificationLight
+03-17 16:16:04.765  2227  2227 I PanelView: mHeadsUpExistenceChangedRunnable
+03-17 16:16:04.769  2227  2227 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock navigationbar search quick_settings >
+03-17 16:16:04.769  2227  2227 I PhoneStatusBar: suspendAutohide
+03-17 16:16:04.772  2227  2227 I PhoneStatusBar: updateNotificationShade: total=0, active=0
+03-17 16:16:04.772  2227  2227 I PhoneStatusBar: removeNotificationChildren
+03-17 16:16:04.808  1702 27365 I NotificationManager: onNotificationExpansionChanged called
+03-17 16:16:04.816  1702  8303 I WindowManager: Destroying surface Surface(name=com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.destroyOrSaveSurface:2201 com.android.server.wm.AppWindowToken.destroySurfaces:374 com.android.server.wm.AppWindowToken.notifyAppStopped:400 com.android.server.wm.WindowManagerService.notifyAppStopped:4869 com.android.server.am.ActivityStack.activityStoppedLocked:1393 com.android.server.am.ActivityManagerService.activityStopped:7690 
+03-17 16:16:04.850  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:16:04.858  1702  1736 W ActivityManager: getRunningAppProcesses: caller 10111 does not hold REAL_GET_TASKS; limiting output
+03-17 16:16:05.595  1702  2618 I NotificationManager: onNotificationVisibilityChanged called
+03-17 16:16:06.688  2227  2227 I StackScrollAlgorithm: updateClipping isOverlap:false, getTopPadding=333.0, Translation=-497.0
+03-17 16:16:06.689  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:16:06.783  2227  2227 I PanelView: cancelPeek: false
+03-17 16:16:07.070  1702  8671 D ActivityManager: Skipping, withExcluded: false, tr.intent:Intent { flg=0x18800000 cmp=com.tencent.mm/.plugin.base.stub.WXEntryActivity (has extras) }
+03-17 16:16:07.071  1702  8671 D ActivityManager: getRecentTasks: topActivity=ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI}
+03-17 16:16:07.084  1702  3694 D ActivityManager: getRecentTasks: num=10,flags=62,totalTasks=46
+03-17 16:16:07.144  2227  2227 I PanelView: mHeadsUpExistenceChangedRunnable
+03-17 16:16:07.188  2227  2227 I StackScrollAlgorithm: updateDimmedActivatedHideSensitive overlap:false
+03-17 16:16:07.635  1702  1820 I DisplayPowerController: HBM brightnessIn =38
+03-17 16:16:07.936  1702  1820 D DisplayPowerController: Animating brightness: target=38, rate=200

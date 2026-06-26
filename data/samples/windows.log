@@ -1,0 +1,300 @@
+2016-09-28 04:30:31, Info                  CBS    No startup processing required, TrustedInstaller service was not set as autostart, or else a reboot is still pending.
+2016-09-28 04:30:31, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:31, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:31, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:32, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:32, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:32, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:32, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:32, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:32, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:32, Info                  CBS    Session: 30546173_4275933214 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:33, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:33, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:33, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:33, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-28 04:30:33, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-28 04:30:33, Info                  CBS    Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+2016-09-28 04:30:33, Info                  CBS    Session: 30546173_4286873840 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:34, Info                  CBS    Session: 30546173_4289704001 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:35, Info                  CBS    Read out cached package applicability for package: Package_for_KB3033929~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:112
+2016-09-28 04:30:35, Info                  CBS    Session: 30546174_9927574 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:35, Info                  CBS    Read out cached package applicability for package: Package_for_KB2563227~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:36, Info                  CBS    Session: 30546174_17668017 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:36, Info                  CBS    Session: 30546174_17818026 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:36, Info                  CBS    Read out cached package applicability for package: Package_for_KB3011780~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:36, Info                  CBS    Read out cached package applicability for package: Package_for_KB3170455~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:36, Info                  CBS    Read out cached package applicability for package: Package_for_KB3156017~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:36, Info                  CBS    Session: 30546174_20798196 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:36, Info                  CBS    Read out cached package applicability for package: Package_for_KB2489256~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:0
+2016-09-28 04:30:36, Info                  CBS    Session: 30546174_21888258 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:36, Info                  CBS    Read out cached package applicability for package: Package_for_KB2552343~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:36, Info                  CBS    Session: 30546174_21968263 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:37, Info                  CBS    Read out cached package applicability for package: Package_for_KB3072305~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:37, Info                  CBS    Session: 30546174_23648359 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:37, Info                  CBS    Session: 30546174_27548582 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:37, Info                  CBS    Session: 30546174_28288625 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:38, Info                  CBS    Session: 30546174_35199020 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:38, Info                  CBS    Read out cached package applicability for package: Package_for_KB3093513~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:38, Info                  CBS    Read out cached package applicability for package: Package_for_KB2894844~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:38, Info                  CBS    Session: 30546174_41309369 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:39, Info                  CBS    Read out cached package applicability for package: Package_for_KB2798162~31bf3856ad364e35~amd64~~6.1.1.5, ApplicableState: 80, CurrentState:112
+2016-09-28 04:30:39, Info                  CBS    Read out cached package applicability for package: Package_for_KB2857650~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:39, Info                  CBS    Session: 30546174_44629559 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:39, Info                  CBS    Read out cached package applicability for package: Package_for_KB3021674~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:39, Info                  CBS    Read out cached package applicability for package: Package_for_KB2809215~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:0
+2016-09-28 04:30:39, Info                  CBS    Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+2016-09-28 04:30:39, Info                  CBS    Read out cached package applicability for package: Package_for_KB3150220~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:39, Info                  CBS    Read out cached package applicability for package: Package_for_KB3126446~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:42, Info                  CBS    Read out cached package applicability for package: Package_for_KB2868626~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:112
+2016-09-28 04:30:43, Info                  CBS    Read out cached package applicability for package: Package_for_KB947821~31bf3856ad364e35~amd64~~6.1.34.0, ApplicableState: 112, CurrentState:0
+2016-09-28 04:30:43, Info                  CBS    Session: 30546174_88482067 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:43, Info                  CBS    Read out cached package applicability for package: Package_for_KB2818604~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:0
+2016-09-28 04:30:43, Info                  CBS    Session: 30546174_89562129 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:43, Info                  CBS    Session: 30546174_90722196 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:43, Info                  CBS    Read out cached package applicability for package: Package_for_KB2676562~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:43, Info                  CBS    Session: 30546174_91422236 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:43, Info                  CBS    Read out cached package applicability for package: Package_for_KB2510531~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-28 04:30:43, Info                  CBS    Session: 30546174_91672250 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:44, Info                  CBS    Read out cached package applicability for package: Package_for_KB2506212~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:44, Info                  CBS    Read out cached package applicability for package: Package_for_KB2603229~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:44, Info                  CBS    Session: 30546174_101172793 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:44, Info                  CBS    Read out cached package applicability for package: Package_for_KB3139940~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-28 04:30:44, Info                  CBS    Read out cached package applicability for package: Package_for_KB3109103~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:45, Info                  CBS    Read out cached package applicability for package: Package_for_KB3142042~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:45, Info                  CBS    Read out cached package applicability for package: Package_for_KB2621146~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0
+2016-09-28 04:30:45, Info                  CBS    Read out cached package applicability for package: Package_for_KB2601626~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 0, CurrentState:0
+2016-09-28 04:30:45, Info                  CBS    Session: 30546174_108903235 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:45, Info                  CBS    Session: 30546174_110453324 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:47, Info                  CBS    Session: 30546174_130874492 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:48, Info                  CBS    Session: 30546174_137784887 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:49, Info                  CBS    Session: 30546174_144085248 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:49, Info                  CBS    Session: 30546174_147205426 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:49, Info                  CBS    Session: 30546174_149295546 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:49, Info                  CBS    Session: 30546174_149405552 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:49, Info                  CBS    Read out cached package applicability for package: Package_for_KB2729452~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-28 04:30:50, Info                  CBS    Session: 30546174_155755915 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:50, Info                  CBS    Session: 30546174_157005987 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:50, Info                  CBS    Read out cached package applicability for package: Package_for_KB3042553~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:50, Info                  CBS    Read out cached package applicability for package: Package_for_KB2732487~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:50, Info                  CBS    Read out cached package applicability for package: Package_for_KB3005607~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-28 04:30:50, Info                  CBS    Read out cached package applicability for package: Package_for_KB2992611~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:51, Info                  CBS    Session: 30546174_166396524 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:51, Info                  CBS    Read out cached package applicability for package: Package_for_KB3037574~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:51, Info                  CBS    Session: 30546174_169316691 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:51, Info                  CBS    Read out cached package applicability for package: Package_for_KB3006625~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-28 04:30:51, Info                  CBS    Session: 30546174_169836721 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:51, Info                  CBS    Session: 30546174_171536818 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:52, Info                  CBS    Session: 30546174_172246858 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:52, Info                  CBS    Read out cached package applicability for package: Package_for_KB3155178~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:52, Info                  CBS    Session: 30546174_173266917 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:52, Info                  CBS    Read out cached package applicability for package: Package_for_KB3138378~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:52, Info                  CBS    Session: 30546174_179737287 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:52, Info                  CBS    Session: 30546174_179777289 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:52, Info                  CBS    Session: 30546174_179897296 initialized by client WindowsUpdateAgent.
+2016-09-28 04:30:53, Info                  CBS    Read out cached package applicability for package: Package_for_KB3156019~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-28 04:30:53, Info                  CBS    Session: 30546174_186137653 initialized by client WindowsUpdateAgent.
+2016-09-29 00:00:44, Info                  CBS    Starting TrustedInstaller initialization.
+2016-09-29 00:00:46, Info                  CSI    00000001@2016/9/28:16:00:46.160 WcpInitialize (wcp.dll version 0.0.0.6) called (stack @0x7fed875eb5d @0x7fee5c39b6d @0x7fee5c0358f @0xffeee97c @0xffeed799 @0xffeedb2f)
+2016-09-29 00:00:46, Info                  CBS    Ending TrustedInstaller initialization.
+2016-09-29 00:00:46, Info                  CBS    Starting the TrustedInstaller main loop.
+2016-09-29 00:00:46, Info                  CBS    SQM: Cleaning up report files older than 10 days.
+2016-09-29 00:00:46, Info                  CBS    SQM: Failed to start standard sample upload. [HRESULT = 0x80004005 - E_FAIL]
+2016-09-29 00:00:46, Info                  CBS    SQM: Queued 0 file(s) for upload with pattern: C:\Windows\servicing\sqm\*_all.sqm, flags: 0x6
+2016-09-29 00:01:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 00:01:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 00:01:46, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 00:01:47, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 00:01:47, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:47, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:47, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:47, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 00:01:47, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 00:01:47, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:47, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:47, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:47, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 00:01:47, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:47, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 00:01:47, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:01:47, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 00:03:19, Info                  CBS    Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SECURITY
+2016-09-29 00:03:19, Info                  CBS    Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/COMPONENTS
+2016-09-29 02:03:46, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:46, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:46, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:46, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:46, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:47, Info                  CBS    Session: 30546354_2833204231 initialized by client WindowsUpdateAgent.
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Warning: Unrecognized packageExtended attribute.
+2016-09-29 02:03:48, Info                  CBS    Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM]
+2016-09-29 02:03:49, Info                  CBS    Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE]
+2016-09-29 02:03:49, Info                  CBS    Session: 30546354_2852095311 initialized by client WindowsUpdateAgent.
+2016-09-29 02:03:51, Info                  CBS    Read out cached package applicability for package: Package_for_KB3121255~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:03:53, Info                  CBS    Read out cached package applicability for package: Package_for_KB3127220~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:03:54, Info                  CBS    Session: 30546354_2902428190 initialized by client WindowsUpdateAgent.
+2016-09-29 02:03:54, Info                  CBS    Read out cached package applicability for package: Package_for_KB3067903~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:03:55, Info                  CBS    Read out cached package applicability for package: Package_for_KB3086255~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:03:55, Info                  CBS    Read out cached package applicability for package: Package_for_KB3182203~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-29 02:03:55, Info                  CBS    Read out cached package applicability for package: Package_for_KB3185319~31bf3856ad364e35~amd64~~11.2.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:03:57, Info                  CBS    Session: 30546354_2936720151 initialized by client WindowsUpdateAgent.
+2016-09-29 02:03:57, Info                  CBS    Read out cached package applicability for package: Package_for_KB3019978~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:0
+2016-09-29 02:03:59, Info                  CBS    Read out cached package applicability for package: Package_for_KB2789645~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-29 02:03:59, Info                  CBS    Read out cached package applicability for package: Package_for_KB3138901~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:03:59, Info                  CBS    Session: 30546354_2956421278 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:00, Info                  CBS    Session: 30546354_2965591803 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:00, Info                  CBS    Read out cached package applicability for package: Package_for_KB2716513~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0
+2016-09-29 02:04:00, Info                  CBS    Session: 30546354_2966921879 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:00, Info                  CBS    Read out cached package applicability for package: Package_for_KB2489256~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 80, CurrentState:0
+2016-09-29 02:04:00, Info                  CBS    Read out cached package applicability for package: Package_for_KB3138962~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-29 02:04:01, Info                  CBS    Read out cached package applicability for package: Package_for_KB3059317~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:01, Info                  CBS    Session: 30546354_2976462424 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:02, Info                  CBS    Session: 30546354_2979852618 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:04, Info                  CBS    Read out cached package applicability for package: Package_for_KB2840631~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:04, Info                  CBS    Read out cached package applicability for package: Package_for_KB2640148~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:07, Info                  CBS    Session: 30546354_3037265902 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:08, Info                  CBS    Session: 30546354_3044096293 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:08, Info                  CBS    Read out cached package applicability for package: Package_for_KB3118401~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:10, Info                  CBS    Session: 30546354_3063077379 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:10, Info                  CBS    Read out cached package applicability for package: Package_for_KB3035126~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:11, Info                  CBS    Session: 30546354_3072147897 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:11, Info                  CBS    Read out cached package applicability for package: Package_for_KB3175024~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:21, Info                  CBS    Session: 30546354_3172813655 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:22, Info                  CBS    Read out cached package applicability for package: Package_for_KB3020387~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 80, CurrentState:0
+2016-09-29 02:04:22, Info                  CBS    Session: 30546354_3183714279 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:22, Info                  CBS    Session: 30546354_3187144475 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:22, Info                  CBS    Read out cached package applicability for package: Package_for_KB2966583~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:23, Info                  CBS    Session: 30546354_3191924748 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:23, Info                  CBS    Read out cached package applicability for package: Package_for_KB3030377~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:23, Info                  CBS    Read out cached package applicability for package: Package_for_KB3021917~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:23, Info                  CBS    Read out cached package applicability for package: Package_for_KB2510531~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-29 02:04:23, Info                  CBS    Read out cached package applicability for package: Package_for_KB2847927~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:23, Info                  CBS    Read out cached package applicability for package: Package_for_KB2604115~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:23, Info                  CBS    Read out cached package applicability for package: Package_for_KB3013531~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:23, Info                  CBS    Read out cached package applicability for package: Package_for_KB2703157~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:0
+2016-09-29 02:04:24, Info                  CBS    Read out cached package applicability for package: Package_for_KB2506212~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:24, Info                  CBS    Read out cached package applicability for package: Package_for_KB2871997~31bf3856ad364e35~amd64~~6.1.2.5, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:24, Info                  CBS    Read out cached package applicability for package: Microsoft-Windows-RDP-WinIP-Package-TopLevel~31bf3856ad364e35~amd64~~7.1.7601.16398, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:24, Info                  CBS    Read out cached package applicability for package: Package_for_KB2862330~31bf3856ad364e35~amd64~~6.1.2.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:25, Info                  CBS    Session: 30546354_3208835715 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:25, Info                  CBS    Session: 30546354_3214976067 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:25, Info                  CBS    Read out cached package applicability for package: Package_for_KB3109560~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:25, Info                  CBS    Read out cached package applicability for package: Package_for_KB3109103~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:26, Info                  CBS    Session: 30546354_3219376318 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:26, Info                  CBS    Read out cached package applicability for package: Package_for_KB3142042~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:26, Info                  CBS    Session: 30546354_3222456494 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:26, Info                  CBS    Read out cached package applicability for package: Package_for_KB3023215~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:26, Info                  CBS    Session: 30546354_3225636676 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:26, Info                  CBS    Read out cached package applicability for package: Package_for_KB2868038~31bf3856ad364e35~amd64~~6.1.1.2, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:27, Info                  CBS    Session: 30546354_3229296886 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:27, Info                  CBS    Read out cached package applicability for package: Package_for_KB2758857~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-29 02:04:27, Info                  CBS    Read out cached package applicability for package: Package_for_KB2846960~31bf3856ad364e35~amd64~~6.1.1.3, ApplicableState: 80, CurrentState:112
+2016-09-29 02:04:31, Info                  CBS    Session: 30546354_3273319404 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:32, Info                  CBS    Session: 30546354_3282399923 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:33, Info                  CBS    Session: 30546354_3297200770 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:34, Info                  CBS    Read out cached package applicability for package: Microsoft-Windows-Embedded-EmbeddedLockdown-Package-TopLevel~31bf3856ad364e35~amd64~~7.1.7601.16511, ApplicableState: 112, CurrentState:0
+2016-09-29 02:04:35, Info                  CBS    Session: 30546354_3311291576 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:35, Info                  CBS    Read out cached package applicability for package: Package_for_KB3054476~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:35, Info                  CBS    Read out cached package applicability for package: Package_for_KB3184143~31bf3856ad364e35~amd64~~6.1.1.4, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:36, Info                  CBS    Read out cached package applicability for package: Package_for_KB2506014~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:37, Info                  CBS    Read out cached package applicability for package: Package_for_KB2861698~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:37, Info                  CBS    Read out cached package applicability for package: Package_for_KB3033889~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:37, Info                  CBS    Session: 30546354_3337223059 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:37, Info                  CBS    Read out cached package applicability for package: Package_for_KB3006625~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-29 02:04:37, Info                  CBS    Session: 30546354_3337953101 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:38, Info                  CBS    Read out cached package applicability for package: Package_for_KB2532531~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-29 02:04:38, Info                  CBS    Read out cached package applicability for package: Package_for_KB3010788~31bf3856ad364e35~amd64~~6.1.1.1, ApplicableState: 112, CurrentState:112
+2016-09-29 02:04:39, Info                  CBS    Session: 30546354_3356384155 initialized by client WindowsUpdateAgent.
+2016-09-29 02:04:40, Info                  CBS    Read out cached package applicability for package: Package_for_KB3031432~31bf3856ad364e35~amd64~~6.1.1.0, ApplicableState: 80, CurrentState:112
+2016-09-29 02:04:40, Info                  CBS    Session: 30546354_3360174372 initialized by client WindowsUpdateAgent.
