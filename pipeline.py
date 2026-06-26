@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -323,6 +324,107 @@ def triage(templates: list, chunk_size: int, system_prompt: str, model: str):
     return deduped, num_calls
 
 
+# ---------------------------------------------------------------------------
+# Pretty terminal report (does NOT touch the JSON file, which stays a pure,
+# webhook-ready validated array). All decoration goes to stderr so that
+# `pipeline.py log | jq` still receives clean JSON on stdout.
+# ---------------------------------------------------------------------------
+# ANSI palette. Auto-disabled when stderr isn't a TTY or NO_COLOR is set.
+_USE_COLOR = sys.stderr.isatty() and not os.environ.get("NO_COLOR")
+
+
+def _c(code: str) -> str:
+    return code if _USE_COLOR else ""
+
+
+RESET = _c("\033[0m")
+BOLD = _c("\033[1m")
+DIM = _c("\033[2m")
+GREEN = _c("\033[32m")
+CYAN = _c("\033[36m")
+GREY = _c("\033[90m")
+
+# Per-severity styling: (color, icon, label).
+_SEV_STYLE = {
+    "fatal": (_c("\033[97;41m"), "●", "FATAL  "),   # white on red
+    "error": (_c("\033[31m"), "●", "ERROR  "),       # red
+    "warning": (_c("\033[33m"), "▲", "WARNING"),     # yellow
+}
+_SEV_ORDER = ("fatal", "error", "warning")
+
+
+_ANSI_RE = re.compile(r"\033\[[0-9;]*m")
+
+
+def _vlen(s: str) -> int:
+    """Visible length of a string, ignoring ANSI escape codes."""
+    return len(_ANSI_RE.sub("", s))
+
+
+def _box(title: str, lines: list, color: str) -> str:
+    """Draw a unicode box around a block of (possibly ANSI-colored) lines."""
+    width = max([len(title)] + [_vlen(l) for l in lines]) + 2
+    top = f"{color}┌─ {BOLD}{title}{RESET}{color} " + "─" * (width - len(title) - 3) + f"┐{RESET}"
+    # Pad against the visible length so ANSI codes don't skew alignment.
+    body = [f"{color}│{RESET} {l}{' ' * (width - 2 - _vlen(l))} {color}│{RESET}"
+            for l in lines]
+    bot = f"{color}└" + "─" * width + f"┘{RESET}"
+    return "\n".join([top] + body + [bot])
+
+
+def print_report(errors, output_path, profiled):
+    """Render a colorized, severity-grouped report to stderr."""
+    counts = {sev: 0 for sev in _SEV_ORDER}
+    for e in errors:
+        sev = e.get("error_severity", "error")
+        counts[sev] = counts.get(sev, 0) + 1
+
+    print(file=sys.stderr)
+    if not errors:
+        print(_box("LOG TRIAGE REPORT", [
+            f"{GREEN}✓ No anomalies detected — logs are clean.{RESET}",
+        ], GREEN), file=sys.stderr)
+        return
+
+    header = (f"{BOLD}{len(errors)}{RESET} event(s)  "
+              f"{DIM}·{RESET}  "
+              + f"  {DIM}·{RESET}  ".join(
+                  f"{_SEV_STYLE[s][0]} {counts[s]} {_SEV_STYLE[s][2].strip().lower()} {RESET}"
+                  for s in _SEV_ORDER if counts[s]))
+    print(_box("LOG TRIAGE REPORT", [header], CYAN), file=sys.stderr)
+    print(file=sys.stderr)
+
+    # Stable, severity-ranked ordering: fatal first, then error, then warning.
+    rank = {s: i for i, s in enumerate(_SEV_ORDER)}
+    ordered = sorted(
+        enumerate(errors),
+        key=lambda p: (rank.get(p[1].get("error_severity"), 99), p[0]),
+    )
+
+    for n, (_, e) in enumerate(ordered, 1):
+        sev = e.get("error_severity", "error")
+        color, icon, label = _SEV_STYLE.get(sev, (RESET, "●", sev.upper()))
+        svc = e.get("service_name", "unknown")
+        ts = e.get("timestamp", "") or "—"
+        occ = e.get("occurrence_count", 1)
+        occ_tag = f"  {GREY}×{occ}{RESET}" if occ and occ > 1 else ""
+
+        print(f"{color} {icon} {label} {RESET}  {BOLD}{svc}{RESET}  "
+              f"{GREY}{ts}{RESET}{occ_tag}", file=sys.stderr)
+        src = (e.get("source_line", "") or "").strip()
+        if src:
+            print(f"   {DIM}{src}{RESET}", file=sys.stderr)
+        rem = (e.get("suggested_remediation", "") or "").strip()
+        if rem:
+            print(f"   {CYAN}→{RESET} {rem}", file=sys.stderr)
+        if n != len(ordered):
+            print(file=sys.stderr)
+
+    print(f"\n{GREY}└─ Full validated JSON written to "
+          f"{BOLD}{output_path}{RESET}{GREY} "
+          f"({'profiled' if profiled else 'static'} mode){RESET}", file=sys.stderr)
+
+
 def print_summary(total_lines, unique_templates, triaged_templates,
                   num_calls, errors, elapsed, profiled):
     by_sev = {}
@@ -359,6 +461,9 @@ def main():
                         help="Disable Stage 1 profiling; use the static prompt")
     parser.add_argument("--profile-sample", type=int, default=120,
                         help="Templates sampled for Stage 1 profiling (default: 120)")
+    parser.add_argument("--raw", action="store_true",
+                        help="Emit the plain validated JSON array to stdout "
+                             "(pipe-friendly) instead of the pretty report")
     args = parser.parse_args()
 
     start = time.perf_counter()
@@ -394,11 +499,17 @@ def main():
         print("Stage 2: triaging...", file=sys.stderr)
         errors, num_calls = triage(templates, args.chunk_size, system_prompt, args.model)
 
+    # The file is always a pure, validated JSON array — webhook/DB ready.
     with open(args.output, "w") as f:
         json.dump(errors, f, indent=2)
 
-    print(json.dumps(errors, indent=2))
     elapsed = time.perf_counter() - start
+    if args.raw:
+        # Plain array on stdout for piping (`pipeline.py log --raw | jq`).
+        print(json.dumps(errors, indent=2))
+    else:
+        # Pretty, human-facing report on stderr — keeps stdout clean.
+        print_report(errors, args.output, profiled=bool(profile))
     print_summary(len(lines), unique_count, len(templates),
                   num_calls, errors, elapsed, profiled=bool(profile))
     print(f"\nWrote {len(errors)} errors to {args.output}", file=sys.stderr)
