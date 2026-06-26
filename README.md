@@ -10,6 +10,10 @@ tailored prompt — so it works on Linux syslog, Hadoop HDFS, and (with no code 
 formats it hasn't seen. It runs against a local **Gemma** model via Ollama and depends on
 **nothing outside the Python standard library**.
 
+> **👩‍⚖️ Reviewers / judges:** see **[RUNNING.md](RUNNING.md)** for copy-paste, step-by-step setup
+> with either the **free Gemini API (cloud)** or **local Gemma (Ollama)**, including expected
+> output and troubleshooting.
+
 ## Layout
 
 ```
